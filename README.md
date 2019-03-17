@@ -104,10 +104,10 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
     ```
     où `cx`, `cy` et `r` représentent respectivement les coordonnées du centre et le rayon.
     Écrivez une classe `Circle` héritant de `Tag` et qui a comme attributs `cx`, `cy` et `r` (de type `double`).
-    Redéfinissez les méthodes nécessaires afin que la méthode `getSVG()` renvoie la balise correspondant à
+    Redéfinissez les méthodes nécessaires afin que la méthode `toSVG()` renvoie la balise correspondant à
     l'objet `Circle`.
   
-    **Attention** : la méthode `getSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
+    **Attention** : la méthode `toSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
  
  2. Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
  classe cliente `AppSVG`. Ajoutez lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
@@ -171,6 +171,7 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
         </g>
     </svg>
     ```
+    
     (le code a été indenté pour plus de lisibilité mais vous n'avez pas à générer du code indenté)
  
  12. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :  ![](ressources/cercles.png)
