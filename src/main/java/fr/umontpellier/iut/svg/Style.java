@@ -13,7 +13,7 @@ public class Style {
         throw new RuntimeException("Méthode à implémenter");
     }
 
-    public String getSVG() {
+    public String toSVG() {
         StringJoiner elements = new StringJoiner(" ");
         if (fill != null) {
             elements.add("fill=\"" + fill + "\"");

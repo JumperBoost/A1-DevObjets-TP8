@@ -27,7 +27,7 @@ public class SVG extends Tag {
     public String getContent() {
         StringBuilder builder = new StringBuilder();
         for (Tag t: content) {
-            builder.append(t.getSVG());
+            builder.append(t.toSVG());
         }
         return builder.toString();
 
@@ -42,7 +42,7 @@ public class SVG extends Tag {
         try {
             out = new PrintStream(new FileOutputStream(filename));
             out.print("<?xml version=\"1.0\" standalone=\"no\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">");
-            out.print(getSVG());
+            out.print(toSVG());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

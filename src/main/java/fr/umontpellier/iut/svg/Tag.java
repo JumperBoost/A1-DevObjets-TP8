@@ -20,14 +20,14 @@ public abstract class Tag {
     }
 
     // retourne le texte SVG correspondant à ce Tag (this) avec son contenu éventuel
-    public String getSVG() {
+    public String toSVG() {
         StringJoiner joiner = new StringJoiner(" ");
         joiner.add(name);
         String getParameters = getParameters();
         if (!getParameters.equals("")) {
             joiner.add(getParameters);
         }
-        String styleString = style.getSVG();
+        String styleString = style.toSVG();
         if (!styleString.equals("")) {
             joiner.add(styleString);
         }

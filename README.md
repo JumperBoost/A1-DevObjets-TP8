@@ -156,22 +156,22 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
  
  11. À l'aide des classes que vous avez écrites, écrivez un programme qui génère un fichier SVG ayant le contenu suivant :
  
- ```xml
- <?xml version="1.0" standalone="no"?>
- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
- <svg xmlns="http://www.w3.org/2000/svg" width="1000.0" height="1000.0">
-     <rect x="0.0" y="0.0" width="1000.0" height="1000.0" fill="lightblue"/>
-     <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
-         <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
-         <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
-         <g transform="translate(0.0, 700.0) rotate(-45)">
-             <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
-             <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
-         </g>
-     </g>
- </svg>
- ```
- (le code a été indenté pour plus de lisibilité mais vous n'avez pas à générer du code indenté)
+    ```xml
+    <?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1000.0" height="1000.0">
+        <rect x="0.0" y="0.0" width="1000.0" height="1000.0" fill="lightblue"/>
+        <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
+            <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
+            <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
+            <g transform="translate(0.0, 700.0) rotate(-45)">
+                <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
+                <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
+            </g>
+        </g>
+    </svg>
+    ```
+    (le code a été indenté pour plus de lisibilité mais vous n'avez pas à générer du code indenté)
  
  12. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :  ![](ressources/cercles.png)
   
