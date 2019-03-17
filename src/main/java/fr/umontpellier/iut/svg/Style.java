@@ -9,9 +9,6 @@ public class Style {
     private Double fillOpacity;
 
 
-    public Style copy() {
-        throw new RuntimeException("Méthode à implémenter");
-    }
 
     public String toSVG() {
         StringJoiner elements = new StringJoiner(" ");
