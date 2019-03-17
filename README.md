@@ -129,7 +129,7 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
  
  6. Le problème maintenant est que d'après la spécification SVG, les balises groupe (`<g>`) et `<svg>`, ne peuvent pas
  contenir de balise `<svg>`. Proposez une restructuration du code, afin de préserver le comportement programmé
- précédemment, mais aussi tenir compte de ces nouvelles contraintes.
+ précédemment, mais aussi tenir compte de ces nouvelles contraintes. Dessinez le diagramme de classes.
  
  7. Si ce n'est pas déjà fait, remarquez que les classes `Group` et `SVG` partagent beaucoup de comportements...
  Proposez une solution en évitant cette duplication de code.
@@ -179,4 +179,6 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
   
     **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
 
+ 1. Dessinez le diagramme de classes final de votre application.
+ 
  1. **Bonus** : écrivez les autres classes de transformation `SkewX`, `SkewY` (des exemples ici : https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)
