@@ -151,10 +151,11 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
  
  9. Implémentez la méthode `addTransform(...)` dans `Style` qui permet d'ajouter au style une transformation passée en paramètre.
   
- 10. Ajoutez des attributs optionnels `rx` et `ry` à `Rectangle` qui permettent d'arrondir les angles du rectangle (voir la doc SVG).  
+ 1. Ajoutez des attributs optionnels `rx` et `ry` à `Rectangle` qui permettent d'arrondir les angles du rectangle (voir la doc SVG).
+    
     **Attention :** ces attributs sont optionnels, il faut donc laisser la possibilité à l'utilisateur de construire un rectangle sans ces nouveaux paramètres.
  
- 11. À l'aide des classes que vous avez écrites, écrivez un programme qui génère un fichier SVG ayant le contenu suivant :
+ 1. À l'aide des classes que vous avez écrites, écrivez un programme qui génère un fichier SVG ayant le contenu suivant :
  
     ```xml
     <?xml version="1.0" standalone="no"?>
@@ -171,9 +172,10 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
         </g>
     </svg>
     ```
-    
     (le code a été indenté pour plus de lisibilité mais vous n'avez pas à générer du code indenté)
  
- 12. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :  ![](ressources/cercles.png)
+ 1. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
+    
+    ![](ressources/cercles.png)
   
-   **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
+    **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
