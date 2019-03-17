@@ -178,3 +178,5 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
     ![](ressources/cercles.png)
   
     **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
+
+ 1. **Bonus** : écrivez les autres classes de transformation `SkewX`, `SkewY` (des exemples ici : https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)
