@@ -46,11 +46,11 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
 modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le
 résultat du calcul de l'expression arithmétique.
 
-1. Écrivez deux classes `Sous-Expression` et `Nombre` implémentant chacune l'interface `Expression` et faites
+1. Écrivez deux classes `SousExpression` et `Nombre` implémentant chacune l'interface `Expression` et faites
 en sorte que votre programme compile.
 
 2. Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe
-`Sous-Expression` va correspondre à un noeud interne de l'arbre. Une `Sous-Expression` sera donc composée d'un caractère représentant l'opérateur, et de ses deux `Sous-Expression`. Ajoutez le code nécessaire à ces deux classes pour
+`SousExpression` va correspondre à un noeud interne de l'arbre. Une `SousExpression` sera donc composée d'un caractère représentant l'opérateur, et de ses deux `SousExpression`. Ajoutez le code nécessaire à ces deux classes pour
  modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression
  correspondante a sa classe. Ainsi, dans la classe cliente (`AppExpression`),
  on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
@@ -64,7 +64,7 @@ en sorte que votre programme compile.
   
 3. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
 de l'arbre binaire. Par exemple le texte de l'abre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la
-solution à la question précédente, rédefinissez la méthode `toString()` dans `Sous-Expression` et `Nombre` afin de
+solution à la question précédente, rédefinissez la méthode `toString()` dans `SousExpression` et `Nombre` afin de
 de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait rassembler à quelque chose comme ceci :
 
     ```java
