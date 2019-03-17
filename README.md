@@ -18,9 +18,9 @@ Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'es
 
 Cliquez sur le lien ci-dessous pour faire votre fork privé du TP (**attention, pas de fork à la main !**):
 
-LIEN CLASSROOM À METTRE ICI
+https://classroom.github.com/a/CFC6e_iJ
 
-Date limite de rendu de votre code sur le dépôt GitHub : **????? à 23h00**
+Date limite de rendu de votre code sur le dépôt GitHub : **Vendredi 29 mars à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
