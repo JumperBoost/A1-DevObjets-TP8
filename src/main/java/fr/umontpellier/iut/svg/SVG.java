@@ -7,8 +7,17 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SVG extends Tag {
+    /**
+     * Largeur de l'image
+     */
     private double width;
+    /**
+     * Hauteur de l'image
+     */
     private double height;
+    /**
+     * Liste d'éléments contenus dans la balise SVG
+     */
     private List<Tag> content;
 
     public SVG(String name, double width, double height) {
@@ -33,10 +42,19 @@ public class SVG extends Tag {
 
     }
 
+    /**
+     * Ajoute une balise à l'image
+     * @param tag balise à ajouter à l'image
+     */
     public void add(Tag tag) {
         content.add(tag);
     }
 
+    /**
+     * Exporte l'image au format SVG dans un fichier
+     *
+     * @param filename le nom du fichier SVG à créer représentant l'image
+     */
     public void saveAsFile(String filename) {
         PrintStream out;
         try {
