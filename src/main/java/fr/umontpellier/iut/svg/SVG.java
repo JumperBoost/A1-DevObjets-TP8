@@ -20,8 +20,8 @@ public class SVG extends Tag {
      */
     private List<Tag> content;
 
-    public SVG(String name, double width, double height) {
-        super(name);
+    public SVG(double width, double height) {
+        super("svg");
         this.width = width;
         this.height = height;
         content = new LinkedList<>();
