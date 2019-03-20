@@ -51,7 +51,7 @@ résultat du calcul de l'expression arithmétique.
 en sorte que votre programme compile.
 
 2. Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe
-`SousExpression` va correspondre à un noeud interne de l'arbre. Une `SousExpression` sera donc composée d'un caractère représentant l'opérateur, et de ses deux `SousExpression`. Ajoutez le code nécessaire à ces deux classes pour
+`SousExpression` va correspondre à un noeud interne de l'arbre. Une `SousExpression` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions. Ajoutez le code nécessaire à ces deux classes pour
  modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression
  correspondante a sa classe. Ainsi, dans la classe cliente (`AppExpression`),
  on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
