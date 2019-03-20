@@ -28,7 +28,7 @@ Soit g contenant r1 et r2, avec
  - g ayant un style "trait noir, remplissage rouge", 
 alors
   - r1 aura un trait bleu, et remplissage rouge
-  - r2 aura un trait noir, et remplissage noir 
+  - r2 aura un trait noir, et remplissage rouge
 Autrement dit, les éléments du groupes héritent du style du groupe, et peuvent redefinir certaines parties du style.
 
 
