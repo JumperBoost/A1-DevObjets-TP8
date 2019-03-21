@@ -24,7 +24,7 @@ Un Tag peut posséder un style (qui décrit taille trait, remplissage, transpare
 Exemple.
 Soit g contenant r1 et r2, avec
  - r1 ayant un style "trait bleu"
- - r2 ayant un style vide
+ - r2 n'ayant pas de style défini
  - g ayant un style "trait noir, remplissage rouge", 
 alors
   - r1 aura un trait bleu, et remplissage rouge
