@@ -2,7 +2,7 @@
 Introduction svg.
 ************************************
 
-Les images svg sont décrites via des balises.
+Les images svg sont décrites via des balises (tags en anglais).
 
 Elles commencent toutes par l'en tête
 <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -16,9 +16,9 @@ Définition Tag
 Un Tag peut être 
 - un Rectangle
 - un Cercle
-- un Groupe de Tag (pattern Composite..)
+- un Groupe de Tag
 
-Un Tag peut posséder des paramètres (Rectangle : pour décrire largeur etc, Cercle : pour décrire centre, rayon, Groupe : pas de paramètres).
+Un Tag peut posséder des paramètres (Rectangle : pour décrire largeur, longuer, Cercle : pour décrire centre, rayon, Groupe : pas de paramètres).
 Un Tag peut posséder un style (qui décrit taille trait, remplissage, transparence etc).
 
 Exemple.
@@ -39,8 +39,8 @@ Format d'export d'un Tag
 
 
 Un Tag s'exporte avec la syntaxe
-- "<nom paramètres et style/>"  pour les tag feuilles (Rectangle, Cercle etc)
-- "<nom paramètres et style/>  contenu du sous arbre </nom>" pour un groupe
+- "<nom paramètres et style/>"  pour les tag simples (Rectangle, Cercle etc)
+- "<nom paramètres et style>  contenu </nom>" pour un groupe
 
 Exemples :
 
@@ -67,7 +67,7 @@ Exemples complets
 ***************************
 
 
-Enfin, une image svg est elle même un Tag, ayant des paramètres (largeur, hauteur ..), pas de style, et du contenu.
+Enfin, une image svg est elle-même une balise, ayant des paramètres (largeur, hauteur ..), du contenu et n'ayant pas de style.
 
 Exemple : un fichier d'image svg avec 2 rectangles sans style
 
@@ -96,5 +96,5 @@ Exemple : un fichier d'image svg avec
 </svg>
 
 
-Le format svg gère aussi les transformations, qui sont décrites dans le style, mais cela sort du cadre de l'introduction! 
+Le format svg gère aussi les transformations, qui sont décrites dans le style, mais cela sort du cadre de l'introduction ! 
 
