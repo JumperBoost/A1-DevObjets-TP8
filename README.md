@@ -124,7 +124,7 @@ etc.). Donc, tous les objets de type `Tag` ont un attribut de type `Style`.
     
     Testez dans le programme principal en générant une image SVG correspondante.
     
- 4. Modifiez le code de la classe `Style` pour que l'on puisse ensuite dans le programme principal créer une image contenant deux figures ayant chacune un style différent. Pour les attributs `fill` et `stroke` de la classe `Style`, vous pouvez donner des noms de couleur tels `"green"` ou `"black"`. 
+ 4. Modifiez le code de la classe `Style` et de la classe `Tag` (ajout de getteurs/setteurs par exemple) afin que l'on puisse ensuite dans le programme principal créer une image contenant deux figures ayant chacune un style différent. Pour les attributs `fill` et `stroke` de la classe `Style`, vous pouvez donner des noms de couleur tels `"green"` ou `"black"`. 
  
  5. En SVG la balise `<g>...</g>` permet de définir un _groupe_. Les groupes peuvent contenir d'autres balises (qui
  peuvent être des formes comme cercle, rectangle, etc. mais aussi des groupes). Ceci permet entre autres d'appliquer le
