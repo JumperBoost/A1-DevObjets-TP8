@@ -1,8 +1,10 @@
-# ![](ressources/logo.jpeg) Bases de la programmation orientée objet 
+# ![](ressources/logo.jpeg) Bases de la programmation orientée objet
+
 ### IUT Montpellier-Sète – Département Informatique
+
 * **Cours:** [M2103](http://cache.media.enseignementsup-recherche.gouv.fr/file/25/09/7/PPN_INFORMATIQUE_256097.pdf) - support [ici](https://github.com/IUTInfoMontp-M2103/Ressources)
-* **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Sébastien Gagné](mailto:sebastien.gagne@umontpellier.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr), [Bruno Yun](mailto:bruno.yun@umontpellier.fr) 
-* Le [forum Piazza](https://piazza.com/class/jpv7gf0lltk4kc) de ce cours pour poser vos questions
+* **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Sébastien Gagné](mailto:sebastien.gagne@umontpellier.fr), [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Jérôme Palaysi](mailto:jerome.palaysi@umontpellier.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
+* Le [forum Piazza](https://piazza.com/class/k52c8w685w3210) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
 * Le [sujet du TP](https://gitprint.com/IUTInfoMontp-M2103/TP8) en format .pdf téléchargeable et imprimable.
 
@@ -19,9 +21,9 @@ Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'es
 
 Cliquez sur le lien ci-dessous pour faire votre fork privé du TP (**attention, pas de fork à la main !**):
 
-https://classroom.github.com/a/CFC6e_iJ
+LIEN CLASSROOM A AJOUTER
 
-Date limite de rendu de votre code sur le dépôt GitHub : **Vendredi 29 mars à 23h00**
+Date limite de rendu de votre code sur le dépôt GitHub : **Dimanche **** à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
