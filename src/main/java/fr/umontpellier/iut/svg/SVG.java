@@ -24,7 +24,7 @@ public class SVG extends Tag {
         super("svg");
         this.width = width;
         this.height = height;
-        content = new LinkedList<>();
+        this.content = new LinkedList<>();
     }
 
     @Override
