@@ -49,11 +49,7 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
 modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le
 résultat du calcul de l'expression arithmétique.
 
-1. Écrivez deux classes `Operation` et `Nombre` implémentant chacune l'interface `Expression` et faites en sorte que votre programme compile. Vous devez en particulier implémenter les constructeurs suivants (respectez bien l'ordre des paramètres) :
-    ```java
-    public Operation(char operateur, Expression expressionGauche, Expression expressionDroite);
-    public Nombre(double valeur);
-    ```
+1. Les classes `Operation` et `Nombre` implémentant chacune l'interface `Expression`, vous sont également données.
 
     Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe `Operation` va correspondre à un noeud interne de l'arbre. Une `Operation` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions. Ajoutez le code nécessaire à ces deux classes pour modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression correspondant à sa classe. Ainsi, dans la classe cliente (`AppExpression`), on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
  
