@@ -60,6 +60,15 @@ résultat du calcul de l'expression arithmétique.
     System.out.println(resultat);
     ```
     Pensez à écrire suffisamment de tests unitaires pour valider votre solution.
+    
+    **Remarque :** Vous supposerez que les seuls caractères possibles pour les opérateurs seront : +, -, * et /
+    
+    **Remarque :** Lorsque le calcul implique une division par zéro, vous pouvez vous contenter de lever une [exception](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html) correspondante :
+ 
+    ```java
+    throw new ArithmeticException("Division par zéro");
+    ```
+    
   
 2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
 de l'arbre binaire. Par exemple le texte de l'abre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la
