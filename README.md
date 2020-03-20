@@ -49,9 +49,9 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
 modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le
 résultat du calcul de l'expression arithmétique.
 
-1. Les classes `Operation` et `Nombre` implémentant chacune l'interface `Expression`, vous sont également données.
+1. Les classes `Operation` et `Nombre` implémentant chacune l'interface `Expression`, vous sont également données. Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe `Operation` va correspondre à un noeud interne de l'arbre. Une `Operation` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions.
 
-    Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe `Operation` va correspondre à un noeud interne de l'arbre. Une `Operation` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions. Ajoutez le code nécessaire à ces deux classes pour modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression correspondant à sa classe. Ainsi, dans la classe cliente (`AppExpression`), on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
+    Ajoutez le code nécessaire à ces deux classes pour modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression correspondant à sa classe. Ainsi, dans la classe cliente (`AppExpression`), on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
  
     ```java
     Expression monExpr; 
@@ -59,8 +59,9 @@ résultat du calcul de l'expression arithmétique.
     double resultat = monExpr.calculerValeur(); // évalue l'expression
     System.out.println(resultat);
     ```
+    Pensez à écrire suffisamment de tests unitaires pour valider votre solution.
   
-1. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
+2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
 de l'arbre binaire. Par exemple le texte de l'abre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la
 solution à la question précédente, rédefinissez la méthode `toString()` dans `Operation` et `Nombre` afin de
 de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait ressembler à quelque chose comme ceci :
@@ -71,7 +72,7 @@ de permettre l'affichage d'une expression arithmétique. À l'utilisation cela d
     ```
     **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits.
     
-4. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète
+3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète
 d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice
 suivant, que l'on espère bien plus amusant !
 
