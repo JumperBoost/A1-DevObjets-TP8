@@ -69,7 +69,6 @@ résultat du calcul de l'expression arithmétique.
     throw new ArithmeticException("Division par zéro");
     ```
     
-  
 2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
 de l'arbre binaire. Par exemple le texte de l'abre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la
 solution à la question précédente, rédefinissez la méthode `toString()` dans `Operation` et `Nombre` afin de
@@ -125,7 +124,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
  
  1. Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
     classe cliente `AppSVG`. Ajoutez lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
-    ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`.
+    ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
  1. De manière similaire définissez la classe `Rectangle` avec un constructeur
     ```java
