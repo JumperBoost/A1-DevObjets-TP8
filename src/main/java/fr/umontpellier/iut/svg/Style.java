@@ -6,18 +6,22 @@ import java.util.StringJoiner;
  * Modélisation des paramètres de style d'une balise SVG
  */
 public class Style {
+
     /**
      * Couleur de remplissage
      */
     private String fill;
+
     /**
      * Couleur du tracé
      */
     private String stroke;
+
     /**
      * Épaisseur du trait
      */
     private Double strokeWidth;
+
     /**
      * Transparence du remplissage
      */

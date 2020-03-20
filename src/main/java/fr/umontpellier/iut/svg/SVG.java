@@ -11,10 +11,12 @@ public class SVG extends Tag {
      * Largeur de l'image
      */
     private double width;
+
     /**
      * Hauteur de l'image
      */
     private double height;
+
     /**
      * Liste d'éléments contenus dans la balise SVG
      */

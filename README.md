@@ -55,13 +55,13 @@ résultat du calcul de l'expression arithmétique.
  
     ```java
     Expression monExpr; 
-    //pour consrtuire une Expression, il faudra d'abord créer les Nombres, puis les Expressions utilisant ces nombres, etc.
+    //pour construire une Expression, il faudra d'abord créer les Nombres, puis les Expressions utilisant ces nombres, etc.
     double resultat = monExpr.calculerValeur(); // évalue l'expression
     System.out.println(resultat);
     ```
     Pensez à écrire suffisamment de tests unitaires pour valider votre solution.
     
-    **Remarque :** Vous supposerez que les seuls caractères possibles pour les opérateurs seront : +, -, * et /
+    **Remarque :** Vous supposerez que les seuls caractères possibles pour les opérateurs seront : `+`, `-`, `*` et `/`
     
     **Remarque :** Lorsque le calcul implique une division par zéro, vous pouvez vous contenter de lever une [exception](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html) correspondante :
  
@@ -79,7 +79,7 @@ de permettre l'affichage d'une expression arithmétique. À l'utilisation cela d
     Expression monExpr; // = new... à vous d'écrire le code nécessaire
     System.out.println(monExpr); // affiche bien le texte de l'expression
     ```
-    **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits.
+    **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifiez la tâche vous pouvez parentheser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
     
 3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète
 d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice
@@ -93,7 +93,7 @@ format XML permettant de décrire de manière textuelle une image. L'image est v
 composants graphiques_ (cercles, rectangles, lignes, etc.), regroupés suivant différents critères.
 
 La philosophie ici est la même que pour une page HTML : la structure est décrite dans un format textuel à l'aide de
-balises (_tag_ en anglais) est c'est l'interpreteur (_renderer_ en anglais) qui interprète le code pour "dessiner" le rendu.
+balises (_tag_ en anglais) et c'est l'interpreteur (_renderer_ en anglais) qui interprète le code pour "dessiner" le rendu.
 
 Un début de code vous est donné dans le package `fr.umontpellier.iut.svg`. Dans cet exercice les noms des différents
 éléments du code correspondent aux mots-clés de la norme SVG. Par conséquent, ces noms ne respecteront pas forcément les
