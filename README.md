@@ -78,7 +78,7 @@ de permettre l'affichage d'une expression arithmétique. À l'utilisation cela d
     Expression monExpr; // = new... à vous d'écrire le code nécessaire
     System.out.println(monExpr); // affiche bien le texte de l'expression
     ```
-    **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifiez la tâche vous pouvez parentheser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
+    **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
     
 3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète
 d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice
@@ -196,7 +196,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
         <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
             <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
             <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
-            <g transform="translate(0.0, 700.0) rotate(-45)">
+            <g transform="translate(0.0, 700.0) rotate(-45, 100, 50)">
                 <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
                 <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
             </g>
