@@ -196,7 +196,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
         <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
             <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
             <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
-            <g transform="translate(0.0, 700.0) rotate(-45, 100, 50)">
+            <g transform="translate(0.0 700.0) rotate(-45 100 50)">
                 <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
                 <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
             </g>
