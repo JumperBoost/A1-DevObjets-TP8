@@ -38,7 +38,7 @@ Vous allez écrire une petite application qui gère les expressions arithmétiqu
  * `+(2+3)*4-1`  &rightarrow; expression non valide
  * `*1` &rightarrow; expression non valide
 
-En respectant les priorités des opérateurs et des parenthèses, on peut représenter une expression arithmétiques sous
+En respectant les priorités des opérateurs et des parenthèses, on peut représenter une expression arithmétique sous
 forme d'une structure arborescente, comme indiqué ci-dessous (on appelle ces structures _arbres binaires_) :
 
 ![](ressources/ArbreBinaire1.png)
@@ -127,7 +127,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     **Attention :** La méthode `toSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
  
  1. Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
-    classe cliente `AppSVG`. Ajoutez lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
+    classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
  1. De manière similaire définissez la classe `Rectangle` avec un constructeur
@@ -152,7 +152,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     - un constructeur `public Group()` qui génère un groupe vide ;
     - une méthode `public void add(Tag t)` qui permet d'ajouter une balise à la fin du groupe.
     
-    Redéfinissez également les méthodes nécessaires héritées de la classe `Tag` pour que la méthode `toSVG` de `Group` fonctionne correctement.
+    Redéfinissez également dans `Group` les méthodes nécessaires héritées de la classe `Tag` afin que sa méthode `toSVG()` fonctionne correctement pour un `Group` (rappel : vous ne devez pas redéfinir la méthode `toSVG()`).
     
     **Remarque :** Vous pouvez vous inspirer de la classe `SVG` pour écrire `Group`.
  
