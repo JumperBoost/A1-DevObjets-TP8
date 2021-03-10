@@ -91,24 +91,21 @@ suivant, que l'on espère bien plus amusant !
   ### Exercice 2 - Images SVG
 
 On se propose ici d'écrire une application qui permet à un utilisateur de produire des images SVG (extension `.svg`).
-SVG est une abbréviation pour [Scalable Vector Graphics](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics), un
+SVG est une abréviation pour [Scalable Vector Graphics](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics), un
 format XML permettant de décrire de manière textuelle une image. L'image est vue comme un _assemblage de plusieurs
 composants graphiques_ (cercles, rectangles, lignes, etc.), regroupés suivant différents critères.
 
 La philosophie ici est la même que pour une page HTML : la structure est décrite dans un format textuel à l'aide de
 balises (_tag_ en anglais) et c'est l'interpreteur (_renderer_ en anglais) qui interprète le code pour "dessiner" le rendu.
 
-Un début de code vous est donné dans le package `fr.umontpellier.iut.svg`. Dans cet exercice les noms des différents
-éléments du code correspondent aux mots-clés de la norme SVG. Par conséquent, ces noms ne respecteront pas forcément les
-conventions de nommage du _Java_. C'est également pour cela que l'ensemble des classes, attributs et méthodes sont nommés
-en anglais. Voici le résumé de ces classes :
+Un début de code vous est donné dans le package `fr.umontpellier.iut.svg`. Dans cet exercice les noms des différents éléments du code correspondent aux mots-clés de la norme SVG. Par conséquent, ces noms ne respecteront pas forcément les conventions de nommage du _Java_. C'est également pour cela que l'ensemble des classes, attributs et méthodes sont nommés en anglais. Certaines classes ont déjà du code écrit, d'autres classes seront à compléter. Voici le résumé des 3 classes principales qui vous sont données :
 
 * `Tag` - modélise les balises
 * `Style` - regroupe les différents styles graphiques que l'on peut appliquer à une balise (épaisseur du trait, couleur,
 etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
 * `SVG` - représente la balise `<svg>...</svg>` qui se trouve à la _racine_ du fichier SVG (l'équivalent de la balise `<html>...</html>` en HTML). 
  
- 1. Prenez le temps de regarder et comprendre ce que fait le code fourni. En particulier, essayez de comprendre le fonctionnement de la méthode `toSVG()` de la classe `Tag` et regardez les différents attributs et méthodes des classes `SVG` et `Style`.
+ 1. Prenez le temps de regarder et comprendre ce que fait le code fourni pour ces 3 classes. En particulier, essayez de comprendre le fonctionnement de la méthode `toSVG()` de la classe `Tag` et regardez les différents attributs et méthodes des classes `SVG` et `Style`.
   
  1. En SVG les cercles sont représentés par des balises comme dans l'exemple suivant :
   
@@ -116,8 +113,8 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     <circle cx="5" cy="3" r="1.3"/>
     ```
     où `cx`, `cy` et `r` représentent respectivement les coordonnées du centre et le rayon.
-    
-    Écrivez une classe `Circle` héritant de `Tag` ayant notamment un constructeur
+
+    Complétez la classe `Circle` en la faisant hériter de `Tag` et en écrivant le code du constructeur qui vous est donné :
     ```java
     public Circle(double cx, double cy, double r)
     ```
@@ -130,12 +127,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
- 1. De manière similaire définissez la classe `Rectangle` avec un constructeur
-    ```java
-    public Rectangle(double x, double y, double width, double height)
-    ```
-    
-    Voici un exemple de balise rectangle en SVG:
+ 1. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG:
     ```xml
     <rect x="8" y="6" width="34" height="49"/>
     ```
@@ -144,11 +136,11 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
   
  1. Ajoutez des *getters* et des *setters* à la classe `Style` afin de pouvoir contrôler les paramètres `stroke`, `fill`, `strokeWidth` et `fillOpacity`. Ajoutez également un *getter* et un *setter* pour l'attribut `style` de la classe `Tag`.
  
- 1. Dans la fonction `main` de `AppSVG` générez une image contenant un rectangle dont le contour (`stroke`) est bleu et l'intérieur (`fill`) est vert, et un cercle dont le contour est noir et l'intérieur est rouge. En SVG les couleurs peuvent être données directement par leur nom (`"green"`, `"black"`, etc.) ou au format RGB en hexadécimal (`"#00FF00"` pour vert par exemple).
+ 1. Dans la fonction `main(String args[])` de `AppSVG` générez une image contenant un rectangle dont le contour (`stroke`) est bleu et l'intérieur (`fill`) est vert, et un cercle dont le contour est noir et l'intérieur est rouge. En SVG les couleurs peuvent être données directement par leur nom (`"green"`, `"black"`, etc.) ou au format RGB en hexadécimal (`"#00FF00"` pour vert par exemple).
     
  1. En SVG la balise `<g>...</g>` permet de définir un _groupe_. Les groupes peuvent contenir d'autres balises (qui
  peuvent être des formes comme cercle, rectangle, etc. mais aussi des groupes). Ceci permet entre autres d'appliquer le
- style du groupe à tous ses éléments. Définissez la classe `Group` correspondant à cette balise avec :
+ style du groupe à tous ses éléments. Complétez la classe `Group` correspondant à cette balise avec :
     - un constructeur `public Group()` qui génère un groupe vide ;
     - une méthode `public void add(Tag t)` qui permet d'ajouter une balise à la fin du groupe.
     
