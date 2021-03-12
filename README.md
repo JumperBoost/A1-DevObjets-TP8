@@ -27,7 +27,7 @@ Comme d'habitude, cliquez sur le lien ci-dessous pour faire votre fork privé du
 
 [Lien fork TP8](https://classroom.github.com/a/3puihloD)
 
-Date limite de rendu de votre code sur le dépôt GitHub : **Dimanche 4 avril à 23h00**
+Date limite de rendu de votre code sur le dépôt GitHub : **Dimanche 11 avril à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
@@ -114,16 +114,11 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     ```
     où `cx`, `cy` et `r` représentent respectivement les coordonnées du centre et le rayon.
 
-    Complétez la classe `Circle` en la faisant hériter de `Tag` et en écrivant le code du constructeur qui vous est donné :
-    ```java
-    public Circle(double cx, double cy, double r)
-    ```
-    Redéfinissez les méthodes nécessaires afin que la méthode `toSVG()` renvoie la balise correspondant à
-    l'objet `Circle`.
+    La classe `Circle` vous est donnée. La méthode `getParameters()` de `Tag` y est redéfinie.
   
-    **Attention :** La méthode `toSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
+    **Attention :** la méthode `toSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
  
- 1. Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
+    Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
