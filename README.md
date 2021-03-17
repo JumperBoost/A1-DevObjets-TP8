@@ -38,28 +38,23 @@ Vous allez écrire une petite application qui gère les expressions arithmétiqu
  * `+(2+3)*4-1`  &rightarrow; expression non valide
  * `*1` &rightarrow; expression non valide
 
-En respectant les priorités des opérateurs et des parenthèses, on peut représenter une expression arithmétique sous
-forme d'une structure arborescente, comme indiqué ci-dessous (on appelle ces structures _arbres binaires_) :
+En respectant les priorités des opérateurs et des parenthèses, on peut représenter une expression arithmétique sous forme d'une structure arborescente, comme indiqué ci-dessous (on appelle ces structures _arbres binaires_) :
 
 ![](ressources/ArbreBinaire1.png)
 ![](ressources/ArbreBinaire2.png)
 ![](ressources/ArbreBinaire3.png)
 
-On souhaite programmer une petite application qui, à partir d'une expression arithmétique donnée sous forme d'arbre binaire,
-calcule la valeur du résultat de cette expression. Par exemple pour chacun des trois arbres donnés ci-dessus, le
-résultat devrait être -5, 11 et 18.5 respectivement.
+On souhaite programmer une petite application qui, à partir d'une expression arithmétique donnée sous forme d'arbre binaire, calcule la valeur du résultat de cette expression. Par exemple pour chacun des trois arbres donnés ci-dessus, le résultat devrait être -5, 11 et 18.5 respectivement.
 
-Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iut.expressions`. L'interface `Expression`
-modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le
-résultat du calcul de l'expression arithmétique.
+Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iut.expressions`. L'interface `Expression` modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le résultat du calcul de l'expression arithmétique.
 
-1. Les classes `Operation` et `Nombre` implémentant chacune l'interface `Expression`, vous sont également données. Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe `Operation` va correspondre à un noeud interne de l'arbre. Une `Operation` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions.
+1. Les classes `Operation` et `Nombre` implémentant chacune l'interface `Expression`, vous sont également données. Intuitivement, la classe `Nombre` va correspondre à la feuille de votre arbre binaire, alors que la classe `Operation` va correspondre à un nœud interne de l'arbre. Une `Operation` sera donc composée d'un caractère représentant l'opérateur, et de ses deux sous-expressions.
 
-    Ajoutez le code nécessaire à ces deux classes pour modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression correspondant à sa classe. Ainsi, dans la classe cliente (`AppExpression`), on devrait pouvoir construire un expression arithmétique et ensuite calculer son résultat :
+    Ajoutez le code nécessaire à ces deux classes pour modéliser cette information et pour que `double calculerValeur()` retourne le résultat d'évaluation de l'expression correspondant à sa classe. Ainsi, dans la classe cliente (`AppExpression`), on devrait pouvoir construire une expression arithmétique et ensuite calculer son résultat :
  
     ```java
     Expression monExpr; 
-    //pour construire une Expression, il faudra d'abord créer les Nombres, puis les Expressions utilisant ces nombres, etc.
+    // pour construire une Expression, il faudra d'abord créer les Nombres, puis les Expressions utilisant ces nombres, etc.
     double resultat = monExpr.calculerValeur(); // évalue l'expression
     System.out.println(resultat);
     ```
@@ -73,10 +68,7 @@ résultat du calcul de l'expression arithmétique.
     throw new ArithmeticException("Division par zéro");
     ```
     
-2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir
-de l'arbre binaire. Par exemple le texte de l'abre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la
-solution à la question précédente, rédefinissez la méthode `toString()` dans `Operation` et `Nombre` afin de
-de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait ressembler à quelque chose comme ceci :
+2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir de l'arbre binaire. Par exemple le texte de l'arbre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la solution à la question précédente, redéfinissez la méthode `toString()` dans `Operation` et `Nombre` afin de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait ressembler à quelque chose comme ceci :
 
     ```java
     Expression monExpr; // = new... à vous d'écrire le code nécessaire
@@ -84,9 +76,7 @@ de permettre l'affichage d'une expression arithmétique. À l'utilisation cela d
     ```
     **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
     
-3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète
-d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice
-suivant, que l'on espère bien plus amusant !
+3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice suivant, que l'on espère bien plus amusant !
 
   ### Exercice 2 - Images SVG
 
@@ -116,7 +106,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
 
     La classe `Circle` vous est donnée. La méthode `getParameters()` de `Tag` y est redéfinie.
   
-    **Attention :** la méthode `toSVG()` est définie dans la classe `Tag` et vous **ne devez pas** la redéfinir.
+    **Attention :** la méthode `toSVG()` de la classe `Tag` devra être héritée telle qu'elle et **ne doit pas** être redéfinie.
  
     Générez une image SVG contenant un ou plusieurs cercles. Pour cela, instanciez un objet de type `SVG` dans la
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
