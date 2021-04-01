@@ -8,7 +8,7 @@
 * **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Romain Lebreton](mailto:romain.lebreton@umontpellier.fr), [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
 * Le [forum Piazza](https://piazza.com/class/kjifrxy1n0i3xa) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
-* Le [sujet du TP](https://gitprint.com/IUTInfoMontp-M2103/TP8) en format .pdf téléchargeable et imprimable.
+* Le [sujet du TP](TP8.pdf) en format .pdf téléchargeable et imprimable.
 
 <!--Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'espace de stockage autorisé :
 
@@ -21,7 +21,7 @@
 -->
 
 ## TP8
-#### _Thème : Interfaces et héritage_
+#### _Thème : Modèles objets avancés_
 
 Comme d'habitude, cliquez sur le lien ci-dessous pour faire votre fork privé du TP avec GitHub Classroom :
 
@@ -42,6 +42,7 @@ En respectant les priorités des opérateurs et des parenthèses, on peut repré
 
 ![](ressources/ArbreBinaire1.png)
 ![](ressources/ArbreBinaire2.png)
+
 ![](ressources/ArbreBinaire3.png)
 
 On souhaite programmer une petite application qui, à partir d'une expression arithmétique donnée sous forme d'arbre binaire, calcule la valeur du résultat de cette expression. Par exemple pour chacun des trois arbres donnés ci-dessus, le résultat devrait être -5, 11 et 18.5 respectivement.
@@ -54,7 +55,8 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
  
     ```java
     Expression monExpr; 
-    // pour construire une Expression, il faudra d'abord créer les Nombres, puis les Expressions utilisant ces nombres, etc.
+    // pour construire une Expression, il faudra d'abord créer les Nombres,
+    // puis les Expressions utilisant ces nombres, etc.
     double resultat = monExpr.calculerValeur(); // évalue l'expression
     System.out.println(resultat);
     ```
