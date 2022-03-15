@@ -4,11 +4,17 @@
 
 ### IUT Montpellier-Sète – Département Informatique
 
-* **Cours:** [M2103](http://cache.media.enseignementsup-recherche.gouv.fr/file/25/09/7/PPN_INFORMATIQUE_256097.pdf) - support [ici](https://gitlabinfo.iutmontp.univ-montp2.fr/dev-objets/Ressources)
-* **Enseignants:** [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr), [Romain Lebreton](mailto:romain.lebreton@umontpellier.fr), [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr), [Victor Poupet](mailto:victor.poupet@umontpellier.fr), [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
+
+* [**Support de cours**](https://gitlabinfo.iutmontp.univ-montp2.fr/dev-objets/Ressources)
+* **Enseignants:**
+  [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr),
+  [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr),
+  [Cyrille Nadal](mailto:cyrille.nadal@umontpellier.fr),
+  [Victor Poupet](mailto:victor.poupet@umontpellier.fr),
+  [Gilles Trombettoni](mailto:gilles.trombettoni@umontpellier.fr),
+  [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
 * Le [forum Piazza](https://piazza.com/class/kyo4oooauez252) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
-* Le [sujet du TP](TP8.pdf) en format .pdf téléchargeable et imprimable.
 
 <!--Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'espace de stockage autorisé :
 
@@ -23,11 +29,7 @@
 ## TP8
 #### _Thème : Modèles objets avancés_
 
-Comme d'habitude, cliquez sur le lien ci-dessous pour faire votre fork privé du TP avec GitHub Classroom :
-
-[Lien fork TP8](https://classroom.github.com/a/3puihloD)
-
-Date limite de rendu de votre code sur le dépôt GitHub : **Dimanche 11 avril à 23h00**
+Date limite de rendu de votre code sur le dépôt GitLab : **Dimanche 10 avril à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
@@ -114,7 +116,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
- 1. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG:
+ 1. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG :
     ```xml
     <rect x="8" y="6" width="34" height="49"/>
     ```
@@ -186,7 +188,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
         </g>
     </svg>
     ```
-    (le code a été indenté pour plus de lisibilité mais vous n'avez pas à générer du code indenté)
+    (le code a été indenté pour plus de lisibilité, mais vous n'avez pas à générer du code indenté)
  
  1. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
     
