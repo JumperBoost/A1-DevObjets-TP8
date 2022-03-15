@@ -15,6 +15,7 @@
   [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
 * Le [forum Piazza](https://piazza.com/class/kyo4oooauez252) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
+* Le [sujet du TP](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/TP8.pdf) en format .pdf téléchargeable et imprimable.
 
 <!--Avant de démarrer le TP, vérifiez que vous n'avez pas atteint votre quota d'espace de stockage autorisé :
 
