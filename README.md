@@ -45,7 +45,6 @@ En respectant les priorités des opérateurs et des parenthèses, on peut repré
 
 ![](ressources/ArbreBinaire1.png)
 ![](ressources/ArbreBinaire2.png)
-
 ![](ressources/ArbreBinaire3.png)
 
 On souhaite programmer une petite application qui, à partir d'une expression arithmétique donnée sous forme d'arbre binaire, calcule la valeur du résultat de cette expression. Par exemple pour chacun des trois arbres donnés ci-dessus, le résultat devrait être -5, 11 et 18.5 respectivement.
@@ -102,7 +101,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
  
  1. Prenez le temps de regarder et comprendre ce que fait le code fourni pour ces 3 classes. En particulier, essayez de comprendre le fonctionnement de la méthode `toSVG()` de la classe `Tag` et regardez les différents attributs et méthodes des classes `SVG` et `Style`.
   
- 1. En SVG les cercles sont représentés par des balises comme dans l'exemple suivant :
+ 2. En SVG les cercles sont représentés par des balises comme dans l'exemple suivant :
   
     ```xml
     <circle cx="5" cy="3" r="1.3"/>
@@ -117,18 +116,18 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
- 1. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG :
+ 3. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG :
     ```xml
     <rect x="8" y="6" width="34" height="49"/>
     ```
     
     Testez dans le programme principal en générant une image SVG correspondante.
   
- 1. Ajoutez des *getters* et des *setters* à la classe `Style` afin de pouvoir contrôler les paramètres `stroke`, `fill`, `strokeWidth` et `fillOpacity`. Ajoutez également un *getter* et un *setter* pour l'attribut `style` de la classe `Tag`.
+ 4. Ajoutez des *getters* et des *setters* à la classe `Style` afin de pouvoir contrôler les paramètres `stroke`, `fill`, `strokeWidth` et `fillOpacity`. Ajoutez également un *getter* et un *setter* pour l'attribut `style` de la classe `Tag`.
  
- 1. Dans la fonction `main(String args[])` de `AppSVG` générez une image contenant un rectangle dont le contour (`stroke`) est bleu et l'intérieur (`fill`) est vert, et un cercle dont le contour est noir et l'intérieur est rouge. En SVG les couleurs peuvent être données directement par leur nom (`"green"`, `"black"`, etc.) ou au format RGB en hexadécimal (`"#00FF00"` pour vert par exemple).
+ 5. Dans la fonction `main(String args[])` de `AppSVG` générez une image contenant un rectangle dont le contour (`stroke`) est bleu et l'intérieur (`fill`) est vert, et un cercle dont le contour est noir et l'intérieur est rouge. En SVG les couleurs peuvent être données directement par leur nom (`"green"`, `"black"`, etc.) ou au format RGB en hexadécimal (`"#00FF00"` pour vert par exemple).
     
- 1. En SVG la balise `<g>...</g>` permet de définir un _groupe_. Les groupes peuvent contenir d'autres balises (qui
+ 6. En SVG la balise `<g>...</g>` permet de définir un _groupe_. Les groupes peuvent contenir d'autres balises (qui
  peuvent être des formes comme cercle, rectangle, etc. mais aussi des groupes). Ceci permet entre autres d'appliquer le
  style du groupe à tous ses éléments. Complétez la classe `Group` correspondant à cette balise avec :
     - un constructeur `public Group()` qui génère un groupe vide ;
@@ -138,14 +137,14 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     
     **Remarque :** Vous pouvez vous inspirer de la classe `SVG` pour écrire `Group`.
  
- 1. Le problème maintenant est que d'après la spécification SVG, les balises `<g>` et `<svg>`, ne peuvent pas
+ 7. Le problème maintenant est que d'après la spécification SVG, les balises `<g>` et `<svg>`, ne peuvent pas
  contenir de balise `<svg>`. Proposez une restructuration du code, afin de préserver le comportement programmé
  précédemment, mais aussi tenir compte de ces nouvelles contraintes. Dessinez le diagramme de classes.
  
- 1. Si ce n'est pas déjà fait, remarquez que les classes `Group` et `SVG` partagent beaucoup de comportements...
+ 8. Si ce n'est pas déjà fait, remarquez que les classes `Group` et `SVG` partagent beaucoup de comportements...
  Proposez une solution en évitant cette duplication de code.
  
- 1. Il est possible d'appliquer des _transformations_ géométriques (translation, rotation, etc.) aux différentes balises.
+ 9. Il est possible d'appliquer des _transformations_ géométriques (translation, rotation, etc.) aux différentes balises.
  Les transformations font partie du style (commun à toutes les balises) et s'appliquent l'une après l'autre (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)). Exemple
  d'une balise rectangle à laquelle on applique successivement une mise à l'échelle, une rotation et une transformation :
  
@@ -162,41 +161,42 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     public Scale(double x, double y);
     ``` 
     
- 1. Modifiez la classe `Style` pour qu'elle gère une liste de transformations. Vous devez notamment :
-    - implémenter la méthode `addTransform(...)` qui permet d'ajouter au style une transformation passée en paramètre ;
-    - modifier la méthode `toSVG()` pour qu'elle affiche correctement l'attribut `transform` (attention à bien respecter l'ordre d'application, la dernière transformation ajoutée avec `addTransform` doit apparaître en premier).
+ 10. Modifiez la classe `Style` pour qu'elle gère une liste de transformations. Vous devez notamment :
+     - implémenter la méthode `addTransform(...)` qui permet d'ajouter au style une transformation passée en paramètre ;
+     - modifier la méthode `toSVG()` pour qu'elle affiche correctement l'attribut `transform` (attention à bien respecter l'ordre d'application, la dernière transformation ajoutée avec `addTransform` doit apparaître en premier).
   
- 1. Les rectangles en SVG peuvent avoir deux attributs optionnels `rx` et `ry` qui permettent d'arrondir les angles du rectangle (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect)). Modifiez la classe `Rectangle` pour en tenir compte, en ajoutant notamment un constructeur
-    ```java
-    public Rectangle(double x, double y, double width, double height, double rx, double ry);
-    ```
-    **Attention :** Ces attributs sont optionnels, il faut donc laisser la possibilité à l'utilisateur de construire un rectangle sans ces nouveaux paramètres.
+ 11. Les rectangles en SVG peuvent avoir deux attributs optionnels `rx` et `ry` qui permettent d'arrondir les angles du rectangle (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect)). Modifiez la classe `Rectangle` pour en tenir compte, en ajoutant notamment un constructeur
+     ```java
+     public Rectangle(double x, double y, double width, double height, double rx, double ry);
+     ```
+     **Attention :** Ces attributs sont optionnels, il faut donc laisser la possibilité à l'utilisateur de construire un rectangle sans ces nouveaux paramètres.
  
- 1. À l'aide des classes que vous avez écrites, écrivez un programme qui génère un fichier SVG ayant le contenu suivant :
+ 12. À l'aide des classes que vous avez écrites, écrivez un programme qui génère un fichier SVG ayant le contenu suivant :
  
-    ```xml
-    <?xml version="1.0" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1000.0" height="1000.0">
-        <rect x="0.0" y="0.0" width="1000.0" height="1000.0" fill="lightblue"/>
-        <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
-            <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
-            <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
-            <g transform="translate(0.0 700.0) rotate(-45 100 50)">
-                <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
-                <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
-            </g>
-        </g>
-    </svg>
-    ```
-    (le code a été indenté pour plus de lisibilité, mais vous n'avez pas à générer du code indenté)
+     ```xml
+     <?xml version="1.0" standalone="no"?>
+     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+     <svg xmlns="http://www.w3.org/2000/svg" width="1000.0" height="1000.0">
+         <rect x="0.0" y="0.0" width="1000.0" height="1000.0" fill="lightblue"/>
+         <g stroke="black" stroke-width="20.0" fill-opacity="0.8">
+             <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#080" />
+             <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#0C0" />
+             <g transform="translate(0.0 700.0) rotate(-45 100 50)">
+                 <rect x="100.0" y="100.0" width="200.0" height="200.0" fill="#800" />
+                 <rect x="200.0" y="200.0" width="400.0" height="400.0" fill="#C00" />
+             </g>
+         </g>
+     </svg>
+     ```
+     (le code a été indenté pour plus de lisibilité, mais vous n'avez pas à générer du code indenté)
  
- 1. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
+ 13. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
     
-    ![](ressources/cercles.png)
-  
-    **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
+     ![](ressources/cercles.png)
+     <!-- Pour conversion avec Pandoc : ![](ressources/cercles.png) { width=50% }-->
+     
+     **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
 
- 1. Dessinez le diagramme de classes final de votre application.
+ 15. Dessinez le diagramme de classes final de votre application.
  
- 1. **Bonus :** Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)) et d'autres formes géométriques (cf. [Basic shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)).
+ 16. **Bonus :** Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform)) et d'autres formes géométriques (cf. [Basic shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)).
