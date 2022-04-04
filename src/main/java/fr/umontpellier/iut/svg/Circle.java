@@ -16,6 +16,6 @@ public class Circle extends Tag {
 
     @Override
     public String getParameters() {
-        return String.format(Locale.US, "cx=\"%f\" cy=\"%f\" r=\"%f\"", this.cx, this.cy, this.r);
+        return String.format(Locale.US, "cx=\"%f\" cy=\"%f\" r=\"%f\"", cx, cy, r);
     }
 }
