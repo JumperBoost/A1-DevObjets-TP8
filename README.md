@@ -200,5 +200,5 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
  14. Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform))
 
  15. Dessinez le diagramme de classes final de votre application.
- 
- 16. **Bonus :** Écrivez d'autres formes géométriques (cf. [Basic shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)).
+
+ 16. **Bonus :** Écrivez les classes d'autres formes géométriques (cf. [Basic shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)).
