@@ -76,13 +76,21 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
 
     ```java
     Expression monExpr; // = new... à vous d'écrire le code nécessaire
-    System.out.println(monExpr); // affiche bien le texte de l'expression
+    System.out.println(monExpr); // invoque automatiquement la méthode `toString()` de l'objet `monExpr`
     ```
-    **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
+   Si `monExpr` modélise l'expression de la troisième figure ci-dessus, alors l'affichage devra être le suivant :
+
+    ```
+    (2-3)*5
+    ```
+
+   **Remarque :** Seule l'expression arithmétique devra être retournée par la méthode `toString()`(pas le résultat de calcul, pas du texte supplémentaire...)
+
+   **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
     
 3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice suivant, que l'on espère bien plus amusant !
 
-  ### Exercice 2 - Images SVG
+### Exercice 2 - Images SVG
 
 On se propose ici d'écrire une application qui permet à un utilisateur de produire des images SVG (extension `.svg`).
 SVG est une abréviation pour [Scalable Vector Graphics](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics), un
@@ -191,7 +199,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
      (le code a été indenté pour plus de lisibilité, mais vous n'avez pas à générer du code indenté)
  
  13. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
-    
+
      ![](ressources/cercles.png)
      <!-- Pour conversion avec Pandoc : ![](ressources/cercles.png) { width=50% }-->
      
