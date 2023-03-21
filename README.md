@@ -46,6 +46,10 @@ En respectant les priorités des opérateurs et des parenthèses, on peut repré
 ![](ressources/ArbreBinaire2.png)
 ![](ressources/ArbreBinaire3.png)
 
+<!-- Pour conversion avec Pandoc : ![](ressources/ArbreBinaire1.png){ height=13% }
+![](ressources/ArbreBinaire2.png){ height=13% }
+![](ressources/ArbreBinaire3.png){ height=13% }-->
+
 On souhaite programmer une petite application qui, à partir d'une expression arithmétique donnée sous forme d'arbre binaire, calcule la valeur du résultat de cette expression. Par exemple pour chacun des trois arbres donnés ci-dessus, le résultat devrait être -5, 11 et 18.5 respectivement.
 
 Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iut.expressions`. L'interface `Expression` modélise les expressions arithmétiques. Observez la méthode `double calculerValeur()`. Cette méthode doit retourner le résultat du calcul de l'expression arithmétique.
@@ -203,6 +207,16 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
      <!-- Pour conversion avec Pandoc : ![](ressources/cercles.png) { width=50% }-->
      
      **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
+
+     Pour être sûr que vous avez fait les choses correctement, faites en sorte que votre programme puisse également générer l'image suivante :
+
+     ![](ressources/cercles2.png)
+
+     **Remarque :** Voici un tableau de couleurs que vous pouvez utiliser directement dans votre programme :
+
+    ```java
+    String[] colors = {"red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "gray or grey", "beige", "olive", "turquoise", "magenta", "maroon", "cyan", "indigo", "lavender", "peach", "gold", "silver", "ivory", "rust", "teal", "navy", "plum", "mauve", "khaki", "fuchsia", "chartreuse", "crimson", "ebony", "emerald", "garnet", "jade", "lemon", "lime", "mint", "mustard", "onyx", "periwinkle", "rose", "ruby", "sapphire", "scarlet", "tangerine", "topaz", "vermilion", "violet", "wine","black", "white"};
+    ```
 
  14. Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform))
 
