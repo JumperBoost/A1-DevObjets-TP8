@@ -215,7 +215,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
      **Remarque :** Voici un tableau de couleurs que vous pouvez utiliser directement dans votre programme :
 
     ```java
-    String[] colors = {"red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "gray or grey", "beige", "olive", "turquoise", "magenta", "maroon", "cyan", "indigo", "lavender", "peach", "gold", "silver", "ivory", "rust", "teal", "navy", "plum", "mauve", "khaki", "fuchsia", "chartreuse", "crimson", "ebony", "emerald", "garnet", "jade", "lemon", "lime", "mint", "mustard", "onyx", "periwinkle", "rose", "ruby", "sapphire", "scarlet", "tangerine", "topaz", "vermilion", "violet", "wine","black", "white"};
+    String[] colors = {"red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "beige", "olive", "turquoise", "magenta", "maroon", "cyan", "indigo", "lavender", "peach", "gold", "silver", "ivory", "rust", "teal", "navy", "plum", "mauve", "khaki", "fuchsia", "chartreuse", "crimson", "ebony", "emerald", "garnet", "jade", "lemon", "lime", "mint", "mustard", "onyx", "periwinkle", "rose", "ruby", "sapphire", "scarlet", "tangerine", "topaz", "vermilion", "violet", "wine","black", "white"};
     ```
 
  14. Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform))
