@@ -3,9 +3,9 @@ package fr.umontpellier.iut.svg;
 import java.util.Locale;
 
 public class Circle extends Tag {
-    private double cx;
-    private double cy;
-    private double r;
+    private final double cx;
+    private final double cy;
+    private final double r;
 
     public Circle(double cx, double cy, double r) {
         super("circle");
