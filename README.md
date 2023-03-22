@@ -203,20 +203,20 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
  
  13. Écrivez un programme qui génère un fichier SVG représentant l'image ci-dessous :
 
-     ![](ressources/cercles.png)
+     <img src="ressources/cercles.png" width="300"/>
      <!-- Pour conversion avec Pandoc : ![](ressources/cercles.png) { width=50% }-->
      
      **Remarque :** Les trois cercles ont la même épaisseur de trait, couleur de bordure et transparence (50%).
 
      Pour être sûr que vous avez fait les choses correctement, faites en sorte que votre programme puisse également générer l'image suivante :
 
-     ![](ressources/cercles2.png)
+     <img src="ressources/cercles2.png" width="400"/>
 
      **Remarque :** Voici un tableau de couleurs que vous pouvez utiliser directement dans votre programme :
 
-    ```java
-    String[] colors = {"red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "beige", "olive", "turquoise", "magenta", "maroon", "cyan", "indigo", "lavender", "peach", "gold", "silver", "ivory", "rust", "teal", "navy", "plum", "mauve", "khaki", "fuchsia", "chartreuse", "crimson", "ebony", "emerald", "garnet", "jade", "lemon", "lime", "mint", "mustard", "onyx", "periwinkle", "rose", "ruby", "sapphire", "scarlet", "tangerine", "topaz", "vermilion", "violet", "wine","black", "white"};
-    ```
+     ```java
+     String[] colors = {"red", "green", "blue", "gray", "orange", "yellow", "purple", "pink", "brown", "beige", "olive", "turquoise", "magenta", "maroon", "cyan", "indigo", "lavender", "peach", "gold", "silver", "ivory", "rust", "teal", "navy", "plum", "mauve", "khaki", "fuchsia", "chartreuse", "crimson", "ebony", "emerald", "garnet", "jade", "lemon", "lime", "mint", "mustard", "onyx", "periwinkle", "rose", "ruby", "sapphire", "scarlet", "tangerine", "topaz", "vermilion", "violet", "wine","black", "white"};
+     ```
 
  14. Écrivez les autres classes de transformation `SkewX`, `SkewY` (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform))
 
