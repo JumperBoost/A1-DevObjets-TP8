@@ -133,9 +133,10 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     
  5. En SVG la balise `<g>...</g>` permet de définir un _groupe_. Les groupes peuvent contenir d'autres balises (qui
  peuvent être des formes comme cercle, rectangle, etc. mais aussi des groupes). Ceci permet entre autres d'appliquer le
- style du groupe à tous ses éléments. Complétez la classe `Group` correspondant à cette balise avec :
-    - un constructeur `public Group()` qui génère un groupe vide ;
-    - une méthode `public void add(Tag t)` qui permet d'ajouter une balise à la fin du groupe.
+ style du groupe à tous ses éléments. Complétez la classe `Group`  correspondant à cette balise :
+    - faites en sorte que `Group` hérite de `Tag`
+    - compléter le constructeur `public Group()` qui génère un groupe vide ;
+    - compléter la méthode `public void add(Tag t)` qui permet d'ajouter une balise à la fin du groupe.
     
     Redéfinissez également dans `Group` les méthodes nécessaires héritées de la classe `Tag` afin que sa méthode `toSVG()` fonctionne correctement pour un `Group` (rappel : vous ne devez pas redéfinir la méthode `toSVG()`).
     
