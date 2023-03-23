@@ -11,7 +11,14 @@ public abstract class Tag {
 
     public Tag(String name) {
         this.name = name;
-        this.style = new Style();
+    }
+
+    public Style getStyle() {
+        return style;
+    }
+
+    public void setStyle(Style style) {
+        this.style = style;
     }
 
     /**

@@ -134,7 +134,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     
     Testez dans le programme principal en générant une image SVG correspondante.
   
- 4. Ajoutez des *getters* et des *setters* à la classe `Style` afin de pouvoir contrôler les paramètres `stroke`, `fill`, `strokeWidth` et `fillOpacity`. Ajoutez également un *getter* et un *setter* pour l'attribut `style` de la classe `Tag`.
+ 4. Ajoutez des *getters* et des *setters* à la classe `Style` afin de pouvoir contrôler les paramètres `stroke`, `fill`, `strokeWidth` et `fillOpacity`.
  
  5. Dans la fonction `main(String args[])` de `AppSVG` générez une image contenant un rectangle dont le contour (`stroke`) est bleu et l'intérieur (`fill`) est vert, et un cercle dont le contour est noir et l'intérieur est rouge. En SVG les couleurs peuvent être données directement par leur nom (`"green"`, `"black"`, etc.) ou au format RGB en hexadécimal (`"#00FF00"` pour vert par exemple).
     
