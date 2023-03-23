@@ -56,17 +56,17 @@ public abstract class Tag {
         if (!getParameters.equals("")) {
             joiner.add(getParameters);
         }
-        String styleString = style.toSVG();
-        if (!styleString.equals("")) {
+        if (style != null) {
+            String styleString = style.toSVG();
             joiner.add(styleString);
         }
         String contentsString = getContent();
         if (!contentsString.equals("")) {
             // balise avec contenu
-            return "<" + joiner.toString() + ">" + contentsString + "</" + name + ">";
+            return "<" + joiner.toString() + ">\n" + contentsString + "</" + name + ">\n";
         } else {
             // balise autofermante
-            return "<" + joiner.toString() + " />";
+            return "<" + joiner.toString() + " />\n";
         }
     }
 }
