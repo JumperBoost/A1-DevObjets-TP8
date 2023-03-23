@@ -171,8 +171,8 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     ``` 
     
  9. Modifiez la classe `Style` pour qu'elle gère une liste de transformations. Vous devez notamment :
-     - implémenter la méthode `addTransform(...)` qui permet d'ajouter au style une transformation passée en paramètre ;
-     - modifier la méthode `toSVG()` pour qu'elle affiche correctement l'attribut `transform` (attention à bien respecter l'ordre d'application, la dernière transformation ajoutée avec `addTransform` doit apparaître en premier).
+     - implémenter la méthode `Style addTransform(...)` qui permet d'ajouter au style une transformation passée en paramètre ; notez qu'elle doit retourner l'objet `this` ; 
+     - modifier la méthode `toSVG()` pour qu'elle affiche correctement l'attribut `transform` (attention à bien respecter l'ordre d'application, la dernière transformation ajoutée avec `Style addTransform(...)` doit apparaître en premier).
   
  10. Les rectangles en SVG peuvent avoir deux attributs optionnels `rx` et `ry` qui permettent d'arrondir les angles du rectangle (cf. [documentation](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect)). Modifiez la classe `Rectangle` pour en tenir compte, en ajoutant notamment un constructeur
      ```java
