@@ -75,16 +75,11 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
     throw new ArithmeticException("Division par zéro");
     ```
     
-2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir de l'arbre binaire. Par exemple le texte de l'arbre le plus à gauche devrait être ((2-3)*5). En vous inspirant de la solution à la question précédente, redéfinissez la méthode `toString()` dans `Operation` et `Nombre` afin de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait ressembler à quelque chose comme ceci :
+2. On souhaite maintenant pouvoir afficher une expression arithmétique en format texte (lisible par l'humain) à partir de l'arbre binaire. Par exemple le texte de l'arbre le plus à gauche devrait être `((2-3)*5)`. En vous inspirant de la solution à la question précédente, redéfinissez la méthode `toString()` dans `Operation` et `Nombre` afin de permettre l'affichage d'une expression arithmétique. À l'utilisation cela devrait ressembler à quelque chose comme ceci :
 
     ```java
     Expression monExpr; // = new... à vous d'écrire le code nécessaire
     System.out.println(monExpr); // invoque automatiquement la méthode `toString()` de l'objet `monExpr`
-    ```
-   Si `monExpr` modélise l'expression de la troisième figure ci-dessus, alors l'affichage devra être le suivant :
-
-    ```
-    (2-3)*5
     ```
 
    **Remarque :** Seule l'expression arithmétique devra être retournée par la méthode `toString()`(pas le résultat de calcul, pas du texte supplémentaire...)
@@ -127,7 +122,7 @@ etc.). Tous les objets de type `Tag` ont un attribut de type `Style`.
     classe cliente `AppSVG`. Ajoutez-lui un cercle en utilisant sa méthode `public void add(Tag tag)`. Vous pouvez
     ensuite générer le fichier SVG avec la méthode `public void saveAsFile(String filename)` de `SVG`. Ce fichier sera généré à la racine de votre projet et vous pouvez le visualiser avec le navigateur ou tout lecteur de fichiers image.
  
- 3. De manière similaire complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG :
+ 3. De manière similaire, complétez la classe `Rectangle`. Voici un exemple de balise rectangle en SVG :
     ```xml
     <rect x="8" y="6" width="34" height="49"/>
     ```
