@@ -18,8 +18,8 @@ Un Tag peut être
 - un Cercle
 - un Groupe de Tag
 
-Un Tag peut posséder des paramètres (Rectangle : pour décrire largeur, longuer, Cercle : pour décrire centre, rayon, Groupe : pas de paramètres).
-Un Tag peut posséder un style (qui décrit la taille trait, le remplissage, la transparence etc).
+Un Tag peut posséder des paramètres (Rectangle : pour décrire largeur, longueur, Cercle : pour décrire centre, rayon, Groupe : pas de paramètres).
+Un Tag peut posséder un style (qui décrit la taille du trait, le remplissage, la transparence etc).
 
 Exemple.
 Soit g contenant r1 et r2, avec
@@ -29,7 +29,7 @@ Soit g contenant r1 et r2, avec
 alors
   - r1 aura un trait bleu, et remplissage rouge
   - r2 aura un trait noir, et remplissage rouge
-Autrement dit, les éléments du groupe héritent du style du groupe, et peuvent redefinir certaines parties du style.
+Autrement dit, les éléments du groupe héritent du style du groupe, et peuvent redéfinir certaines parties du style.
 
 
 
