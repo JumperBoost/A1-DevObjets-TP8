@@ -6,13 +6,13 @@
 
 * [**Support de cours**](https://gitlabinfo.iutmontp.univ-montp2.fr/dev-objets/Ressources)
 * **Enseignants:**
-  [Marin Bougeret](mailto:marin.bougeret@umontpellier.fr),
-  [Romain Lebreton](mailto:romain.lebreton@umontpellier.fr),<!--[Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr),-->
+  [Malo Gasquet](mailto:malo.gasquet@umontpellier.fr),
+  [Sophie Nabitz](mailto:sophie.nabitz@univ-avignon.fr),
   [Cyrille Nadal](mailto:cyrille.nadal@umontpellier.fr),
   [Victor Poupet](mailto:victor.poupet@umontpellier.fr),
   [Gilles Trombettoni](mailto:gilles.trombettoni@umontpellier.fr),
   [Petru Valicov](mailto:petru.valicov@umontpellier.fr)
-* Le [forum Piazza](https://piazza.com/class/ld2tzi5k82via) de ce cours pour poser vos questions
+* Le [forum Piazza](https://piazza.com/class/lrahb0patze3u4) de ce cours pour poser vos questions
 * [Email](mailto:petru.valicov@umontpellier.fr) pour une question d'ordre privée concernant le cours.
 * Le [sujet du TP](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/TP8.pdf) en format .pdf téléchargeable et imprimable.
 
@@ -29,11 +29,11 @@
 ## TP8
 #### _Thème : Modèles objets avancés_
 
-Date limite de rendu de votre code sur le dépôt GitLab : **dimanche 9 avril à 23h00**
+Date limite de rendu de votre code sur le dépôt GitLab : **dimanche 28 avril à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
-Vous allez écrire une petite application qui gère les expressions arithmétiques composées des quatre opérations mathématiques usuelles (-, +, / et *). Pour simplifier on supposera que les opérations de nos expressions arithmétiques sont d'arité 2, c'est-à-dire ont deux opérandes. Par exemple :
+Vous allez écrire une petite application qui gère les expressions arithmétiques composées des quatre opérations mathématiques usuelles (-, +, / et *). Pour simplifier, on supposera que les opérations de nos expressions arithmétiques sont d'arité 2, c'est-à-dire ont deux opérandes. Par exemple :
 
  * `(2+3)*4-1`  &rightarrow; expression valide
  * `5*4-9/6`  &rightarrow; expression valide
@@ -84,7 +84,7 @@ Les premiers bouts de code vous sont donnés dans le package `fr.umontpellier.iu
 
    **Remarque :** Seule l'expression arithmétique devra être retournée par la méthode `toString()`(pas le résultat de calcul, pas du texte supplémentaire...)
 
-   **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
+   **Attention :** Pensez à respecter les priorités des opérateurs et donc mettre les parenthèses aux bons endroits. Pour vous simplifier la tâche, vous pouvez parenthéser toutes les expressions, y compris celles pour lesquelles habituellement on n'ajoute pas les parenthèses, par ex : `(2+3)` ou `((2*3)+5)` ou `(8*9)`.
     
 3. Dessinez le diagramme de classes et discutez-en avec votre enseignant. Cette structure est une illustration concrète d'un modèle [Composite](https://en.wikipedia.org/wiki/Composite_pattern). Le même modèle vous sera utile pour l'exercice suivant, que l'on espère bien plus amusant !
 
