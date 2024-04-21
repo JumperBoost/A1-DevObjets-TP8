@@ -29,7 +29,7 @@
 ## TP8
 #### _Thème : Modèles objets avancés_
 
-Date limite de rendu de votre code sur le dépôt GitLab : **dimanche 28 avril à 23h00**
+Date limite de rendu de votre code sur le dépôt GitLab : **dimanche 5 mai à 23h00**
 
 ### Exercice 1 - Expressions Arithmétiques
 
