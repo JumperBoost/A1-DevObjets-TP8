@@ -1,6 +1,8 @@
 @startuml
 top to bottom direction
 skinparam linetype ortho
+skinparam nodesep 10
+skinparam ranksep 50
 
 class AppExpression {
   + main(String[]): void
@@ -10,16 +12,14 @@ interface Expression {
 }
 class Nombre {
   - valeur: double
-  + calculerValeur(): double
 }
 class Operation {
   - operateur: char
-  + calculerValeur(): double
 }
 
 AppExpression   -.>  Nombre
 AppExpression   -.>  Operation
 Nombre          -.|>  Expression
 Operation       -.|>  Expression
-Operation       o--> "2" Expression
+Operation       o-- "2  " Expression
 @enduml
