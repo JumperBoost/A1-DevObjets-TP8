@@ -1,11 +1,116 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="381px" preserveAspectRatio="none" style="width:530px;height:381px;background:#FFFFFF;" version="1.1" viewBox="0 0 530 381" width="530px" zoomAndPan="magnify"><defs/><g><!--class AppExpression--><g id="elem_AppExpression"><rect
-        fill="#FFFFFF" height="60.2969" id="AppExpression" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="154" x="152.5" y="12"/><ellipse cx="175.85" cy="26" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M178.8188,31.6406 Q178.2406,31.9375 177.6,32.0781 Q176.9594,32.2344 176.2563,32.2344 Q173.7563,32.2344 172.4281,30.5938 Q171.1156,28.9375 171.1156,25.8125 Q171.1156,22.6875 172.4281,21.0313 Q173.7563,19.375 176.2563,19.375 Q176.9594,19.375 177.6,19.5313 Q178.2563,19.6875 178.8188,19.9844 L178.8188,22.7031 Q178.1938,22.125 177.6,21.8594 Q177.0063,21.5781 176.3813,21.5781 Q175.0375,21.5781 174.35,22.6563 Q173.6625,23.7188 173.6625,25.8125 Q173.6625,27.9063 174.35,28.9844 Q175.0375,30.0469 176.3813,30.0469 Q177.0063,30.0469 177.6,29.7813 Q178.1938,29.5 178.8188,28.9219 L178.8188,31.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="103" x="190.15" y="30.8467">AppExpression</text><line style="stroke:#000000;stroke-width:1.0;" x1="153.5" x2="305.5" y1="40" y2="40"/><line style="stroke:#000000;stroke-width:1.0;" x1="153.5" x2="305.5" y1="48" y2="48"/><ellipse cx="163.5" cy="61.6484" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="170.5" y="64.9951">main(String[]): void</text></g><!--class Expression--><g id="elem_Expression"><rect
-        fill="#FFFFFF" height="72.5625" id="Expression" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="187" x="260" y="301.49"/><ellipse cx="311.75" cy="321.6228" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M307.6719,317.3884 L307.6719,315.2322 L315.0625,315.2322 L315.0625,317.3884 L312.5938,317.3884 L312.5938,325.4666 L315.0625,325.4666 L315.0625,327.6228 L307.6719,327.6228 L307.6719,325.4666 L310.1406,325.4666 L310.1406,317.3884 L307.6719,317.3884 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="332.25" y="317.6287">&#171;interface&#187;</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="76" x="329.25" y="333.4539">Expression</text><line style="stroke:#000000;stroke-width:1.0;" x1="261" x2="446" y1="341.7556" y2="341.7556"/><line style="stroke:#000000;stroke-width:1.0;" x1="261" x2="446" y1="349.7556" y2="349.7556"/><ellipse cx="271" cy="363.4041" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="278" y="366.7507">calculerValeur(): double</text></g><!--class Nombre--><g id="elem_Nombre"><rect
-        fill="#FFFFFF" height="76.5938" id="Nombre" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="187" x="12" y="148.6"/><ellipse cx="74.25" cy="162.6" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M77.2188,168.2406 Q76.6406,168.5375 76,168.6781 Q75.3594,168.8344 74.6563,168.8344 Q72.1563,168.8344 70.8281,167.1938 Q69.5156,165.5375 69.5156,162.4125 Q69.5156,159.2875 70.8281,157.6313 Q72.1563,155.975 74.6563,155.975 Q75.3594,155.975 76,156.1313 Q76.6563,156.2875 77.2188,156.5844 L77.2188,159.3031 Q76.5938,158.725 76,158.4594 Q75.4063,158.1781 74.7813,158.1781 Q73.4375,158.1781 72.75,159.2563 Q72.0625,160.3188 72.0625,162.4125 Q72.0625,164.5063 72.75,165.5844 Q73.4375,166.6469 74.7813,166.6469 Q75.4063,166.6469 76,166.3813 Q76.5938,166.1 77.2188,165.5219 L77.2188,168.2406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="55" x="91.75" y="167.4467">Nombre</text><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="198" y1="176.6" y2="176.6"/><rect fill="none" height="6" style="stroke:#000000;stroke-width:1.0;" width="6" x="20" y="187.2484"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="98" x="30" y="193.5951">valeur: double</text><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="198" y1="200.8969" y2="200.8969"/><ellipse cx="23" cy="214.5453" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="30" y="217.892">calculerValeur(): double</text></g><!--class Operation--><g id="elem_Operation"><rect
-        fill="#FFFFFF" height="109.1875" id="Operation" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="239" x="234" y="132.3"/><ellipse cx="315.75" cy="146.3" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M318.7188,151.9406 Q318.1406,152.2375 317.5,152.3781 Q316.8594,152.5344 316.1563,152.5344 Q313.6563,152.5344 312.3281,150.8938 Q311.0156,149.2375 311.0156,146.1125 Q311.0156,142.9875 312.3281,141.3313 Q313.6563,139.675 316.1563,139.675 Q316.8594,139.675 317.5,139.8313 Q318.1563,139.9875 318.7188,140.2844 L318.7188,143.0031 Q318.0938,142.425 317.5,142.1594 Q316.9063,141.8781 316.2813,141.8781 Q314.9375,141.8781 314.25,142.9563 Q313.5625,144.0188 313.5625,146.1125 Q313.5625,148.2063 314.25,149.2844 Q314.9375,150.3469 316.2813,150.3469 Q316.9063,150.3469 317.5,150.0813 Q318.0938,149.8 318.7188,149.2219 L318.7188,151.9406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="68" x="333.25" y="151.1467">Operation</text><line style="stroke:#000000;stroke-width:1.0;" x1="235" x2="472" y1="160.3" y2="160.3"/><rect fill="none" height="6" style="stroke:#000000;stroke-width:1.0;" width="6" x="242" y="170.9484"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="107" x="252" y="177.2951">operateur: char</text><rect fill="none" height="6" style="stroke:#000000;stroke-width:1.0;" width="6" x="242" y="187.2453"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="215" x="252" y="193.592">expressionGauche: Expression</text><rect fill="none" height="6" style="stroke:#000000;stroke-width:1.0;" width="6" x="242" y="203.5422"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="203" x="252" y="209.8889">expressionDroite: Expression</text><line style="stroke:#000000;stroke-width:1.0;" x1="235" x2="472" y1="217.1906" y2="217.1906"/><ellipse cx="245" cy="230.8391" fill="#FFFFFF" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="252" y="234.1857">calculerValeur(): double</text></g><!--link AppExpression to Nombre--><g id="link_AppExpression_Nombre"><path
-        d="M175.75,72.49 C175.75,94.54 175.75,118.56 175.75,142.31 " fill="none" id="AppExpression-to-Nombre" style="stroke:#595959;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#595959" points="175.75,148.31,179.75,139.31,175.75,143.31,171.75,139.31,175.75,148.31" style="stroke:#595959;stroke-width:1.0;"/></g><!--link AppExpression to Operation--><g id="link_AppExpression_Operation"><path
-        d="M270.25,72.49 C270.25,89.74 270.25,105.85 270.25,126.03 " fill="none" id="AppExpression-to-Operation" style="stroke:#595959;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#595959" points="270.25,132.03,274.25,123.03,270.25,127.03,266.25,123.03,270.25,132.03" style="stroke:#595959;stroke-width:1.0;"/></g><!--link Nombre to Expression--><g id="link_Nombre_Expression"><path
-        d="M105.5,225.43 C105.5,270.21 105.5,338.05 105.5,338.05 C105.5,338.05 171.51,338.05 241.74,338.05 " fill="none" id="Nombre-to-Expression" style="stroke:#008200;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="259.74,338.05,241.74,332.05,241.74,344.05,259.74,338.05" style="stroke:#008200;stroke-width:1.0;"/></g><!--link Operation to Expression--><g id="link_Operation_Expression"><path
-        d="M306.75,241.79 C306.75,261.51 306.75,265.25 306.75,283.05 " fill="none" id="Operation-to-Expression" style="stroke:#008200;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="306.75,301.05,312.75,283.05,300.75,283.05,306.75,301.05" style="stroke:#008200;stroke-width:1.0;"/></g><!--link Operation to Expression--><g id="link_Operation_Expression"><path
-        d="M353.5,253.79 C353.5,273.51 353.5,277.25 353.5,295.05 " fill="none" id="Operation-Expression" style="stroke:#595959;stroke-width:1.0;"/><polygon fill="#595959" points="353.5,241.79,349.5,247.79,353.5,253.79,357.5,247.79,353.5,241.79" style="stroke:#595959;stroke-width:1.0;"/><polygon fill="#595959" points="353.5,301.05,357.5,292.05,353.5,296.05,349.5,292.05,353.5,301.05" style="stroke:#595959;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="345.0125" y="261.4695">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="118" x="226.4656" y="275.2174">expressionGauche</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="281.4656" y="290.3502">1</text></g><!--link Operation to Expression--><g id="link_Operation_Expression"><path
-        d="M400.25,253.79 C400.25,273.51 400.25,277.25 400.25,295.05 " fill="none" id="Operation-Expression-1" style="stroke:#595959;stroke-width:1.0;"/><polygon fill="#595959" points="400.25,241.79,396.25,247.79,400.25,253.79,404.25,247.79,400.25,241.79" style="stroke:#595959;stroke-width:1.0;"/><polygon fill="#595959" points="400.25,301.05,404.25,292.05,400.25,296.05,396.25,292.05,400.25,301.05" style="stroke:#595959;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="397.4602" y="261.4695">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="108" x="415.6773" y="275.2174">expressionDroite</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="465.6773" y="290.3502">1</text></g><!--SRC=[dP9FIyGm4CNl-HHZlQn_2bKGT5aAWk9D3uANTHVITBJ1D1EcwQA8tzrijjkjFSZgv9JXbvStBpdm5TO8paXjXIS7dg0Wxwc6KZCghycAvarR9rdMOBH5_-4GY7r5GYWZcmQkdRjzTunD4sZu500dK0V1oQDdRL_dYwCfh4YNuajewv5Vf48Od9ZDODVFyqv1IQDQW_ma3ROy2HebjON1eBAvzfxgWZ7IAQmYrJDx2JmuPEctdbEWk8yogf8SUzZRl9Ejgd0wC3u2RfYq7mE_sX0_auDqVdXnjLwdfMmgB1Tf3jsOUw7zGABBPbk1phBByophwIKCNo2KsANnpoF9MGB7Er_nJwrj9UCCdsqW1odzMMQJz4Zc6m00]--></g></svg>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css"
+     height="316.8px" preserveAspectRatio="none" style="width:362px;height:316px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 362 316" width="362.7px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--class AppExpression-->
+        <g id="elem_AppExpression">
+            <rect fill="#F1F1F1" height="59.959" id="AppExpression" rx="2.25" ry="2.25"
+                  style="stroke:#181818;stroke-width:0.45;" width="130.5" x="116.1" y="6.3"/>
+            <ellipse cx="137.295" cy="20.7" fill="#ADD1B2" rx="9.9" ry="9.9" style="stroke:#181818;stroke-width:0.9;"/>
+            <path d="M139.7841,16.9875 Q139.9247,16.7906 140.0934,16.6922 Q140.2622,16.5938 140.4591,16.5938 Q140.7966,16.5938 141.0075,16.8328 Q141.2184,17.0578 141.2184,17.6063 L141.2184,18.9141 Q141.2184,19.4625 141.0075,19.7016 Q140.7966,19.9406 140.4591,19.9406 Q140.1497,19.9406 139.9669,19.7578 Q139.7841,19.5891 139.6856,19.125 Q139.6434,18.8016 139.4747,18.6328 Q139.1794,18.2953 138.6309,18.0984 Q138.0825,17.9016 137.52,17.9016 Q136.8309,17.9016 136.2544,18.1969 Q135.6919,18.4922 135.2419,19.1672 Q134.8059,19.8422 134.8059,20.7703 L134.8059,21.7547 Q134.8059,22.8656 135.6075,23.6109 Q136.4091,24.3422 137.8434,24.3422 Q138.6872,24.3422 139.2778,24.1172 Q139.6294,23.9766 140.0091,23.5828 Q140.2481,23.3438 140.3747,23.2734 Q140.5153,23.2031 140.6981,23.2031 Q140.9934,23.2031 141.2184,23.4422 Q141.4575,23.6672 141.4575,23.9766 Q141.4575,24.2859 141.1481,24.6516 Q140.6981,25.1719 139.9809,25.4672 Q139.0106,25.875 137.8434,25.875 Q136.4794,25.875 135.3966,25.3125 Q134.5106,24.8625 133.8919,23.9063 Q133.2731,22.9359 133.2731,21.7828 L133.2731,20.7422 Q133.2731,19.5469 133.8216,18.5203 Q134.3841,17.4797 135.3684,16.9313 Q136.3528,16.3688 137.4638,16.3688 Q138.1247,16.3688 138.7013,16.5234 Q139.2919,16.6641 139.7841,16.9875 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="84.6"
+                  x="151.605" y="25.9172">AppExpression
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="117" x2="245.7" y1="35.1" y2="35.1"/>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="117" x2="245.7" y1="42.3" y2="42.3"/>
+            <ellipse cx="126" cy="55.6295" fill="#84BE84" rx="2.7" ry="2.7" style="stroke:#038048;stroke-width:0.9;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="107.1"
+                  x="134.1" y="59.4967">main(String[]): void
+            </text>
+        </g><!--class Expression-->
+        <g id="elem_Expression">
+            <rect fill="#F1F1F1" height="59.959" id="Expression" rx="2.25" ry="2.25"
+                  style="stroke:#181818;stroke-width:0.45;" width="159.3" x="197.1" y="251.1"/>
+            <ellipse cx="241.875" cy="265.5" fill="#B4A7E5" rx="9.9" ry="9.9" style="stroke:#181818;stroke-width:0.9;"/>
+            <path d="M242.7328,262.4766 L242.7328,268.4672 L244.2797,268.4672 Q244.8281,268.4672 245.0672,268.6781 Q245.3063,268.8891 245.3063,269.2406 Q245.3063,269.5781 245.0672,269.7891 Q244.8281,270 244.2797,270 L239.6531,270 Q239.1047,270 238.8656,269.7891 Q238.6266,269.5781 238.6266,269.2266 Q238.6266,268.8891 238.8656,268.6781 Q239.1047,268.4672 239.6531,268.4672 L241.2,268.4672 L241.2,262.4766 L239.6531,262.4766 Q239.1047,262.4766 238.8656,262.2656 Q238.6266,262.0547 238.6266,261.7031 Q238.6266,261.3656 238.8656,261.1547 Q239.1047,260.9438 239.6531,260.9438 L244.2797,260.9438 Q244.8281,260.9438 245.0672,261.1547 Q245.3063,261.3656 245.3063,261.7031 Q245.3063,262.0547 245.0672,262.2656 Q244.8281,262.4766 244.2797,262.4766 L242.7328,262.4766 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" font-style="italic" lengthAdjust="spacing"
+                  textLength="62.1" x="260.325" y="270.7172">Expression
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="198" x2="355.5" y1="279.9" y2="279.9"/>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="198" x2="355.5" y1="287.1" y2="287.1"/>
+            <ellipse cx="207" cy="300.4295" fill="#84BE84" rx="2.7" ry="2.7" style="stroke:#038048;stroke-width:0.9;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="135.9"
+                  x="215.1" y="304.2967">calculerValeur(): double
+            </text>
+        </g><!--class Nombre-->
+        <g id="elem_Nombre">
+            <rect fill="#F1F1F1" height="76.718" id="Nombre" rx="2.25" ry="2.25"
+                  style="stroke:#181818;stroke-width:0.45;" width="159.3" x="6.3" y="120.6"/>
+            <ellipse cx="60.075" cy="135" fill="#ADD1B2" rx="9.9" ry="9.9" style="stroke:#181818;stroke-width:0.9;"/>
+            <path d="M62.5641,131.2875 Q62.7047,131.0906 62.8734,130.9922 Q63.0422,130.8938 63.2391,130.8938 Q63.5766,130.8938 63.7875,131.1328 Q63.9984,131.3578 63.9984,131.9063 L63.9984,133.2141 Q63.9984,133.7625 63.7875,134.0016 Q63.5766,134.2406 63.2391,134.2406 Q62.9297,134.2406 62.7469,134.0578 Q62.5641,133.8891 62.4656,133.425 Q62.4234,133.1016 62.2547,132.9328 Q61.9594,132.5953 61.4109,132.3984 Q60.8625,132.2016 60.3,132.2016 Q59.6109,132.2016 59.0344,132.4969 Q58.4719,132.7922 58.0219,133.4672 Q57.5859,134.1422 57.5859,135.0703 L57.5859,136.0547 Q57.5859,137.1656 58.3875,137.9109 Q59.1891,138.6422 60.6234,138.6422 Q61.4672,138.6422 62.0578,138.4172 Q62.4094,138.2766 62.7891,137.8828 Q63.0281,137.6438 63.1547,137.5734 Q63.2953,137.5031 63.4781,137.5031 Q63.7734,137.5031 63.9984,137.7422 Q64.2375,137.9672 64.2375,138.2766 Q64.2375,138.5859 63.9281,138.9516 Q63.4781,139.4719 62.7609,139.7672 Q61.7906,140.175 60.6234,140.175 Q59.2594,140.175 58.1766,139.6125 Q57.2906,139.1625 56.6719,138.2063 Q56.0531,137.2359 56.0531,136.0828 L56.0531,135.0422 Q56.0531,133.8469 56.6016,132.8203 Q57.1641,131.7797 58.1484,131.2313 Q59.1328,130.6688 60.2438,130.6688 Q60.9047,130.6688 61.4813,130.8234 Q62.0719,130.9641 62.5641,131.2875 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="44.1"
+                  x="78.525" y="140.2172">Nombre
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="7.2" x2="164.7" y1="149.4" y2="149.4"/>
+            <rect fill="none" height="5.4" style="stroke:#C82930;stroke-width:0.9;" width="5.4" x="13.5" y="160.0295"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="81"
+                  x="24.3" y="166.5967">valeur: double
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="7.2" x2="164.7" y1="173.359" y2="173.359"/>
+            <ellipse cx="16.2" cy="186.6885" fill="#84BE84" rx="2.7" ry="2.7" style="stroke:#038048;stroke-width:0.9;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="135.9"
+                  x="24.3" y="190.5557">calculerValeur(): double
+            </text>
+        </g><!--class Operation-->
+        <g id="elem_Operation">
+            <rect fill="#F1F1F1" height="76.718" id="Operation" rx="2.25" ry="2.25"
+                  style="stroke:#181818;stroke-width:0.45;" width="159.3" x="197.1" y="120.6"/>
+            <ellipse cx="244.575" cy="135" fill="#ADD1B2" rx="9.9" ry="9.9" style="stroke:#181818;stroke-width:0.9;"/>
+            <path d="M247.0641,131.2875 Q247.2047,131.0906 247.3734,130.9922 Q247.5422,130.8938 247.7391,130.8938 Q248.0766,130.8938 248.2875,131.1328 Q248.4984,131.3578 248.4984,131.9063 L248.4984,133.2141 Q248.4984,133.7625 248.2875,134.0016 Q248.0766,134.2406 247.7391,134.2406 Q247.4297,134.2406 247.2469,134.0578 Q247.0641,133.8891 246.9656,133.425 Q246.9234,133.1016 246.7547,132.9328 Q246.4594,132.5953 245.9109,132.3984 Q245.3625,132.2016 244.8,132.2016 Q244.1109,132.2016 243.5344,132.4969 Q242.9719,132.7922 242.5219,133.4672 Q242.0859,134.1422 242.0859,135.0703 L242.0859,136.0547 Q242.0859,137.1656 242.8875,137.9109 Q243.6891,138.6422 245.1234,138.6422 Q245.9672,138.6422 246.5578,138.4172 Q246.9094,138.2766 247.2891,137.8828 Q247.5281,137.6438 247.6547,137.5734 Q247.7953,137.5031 247.9781,137.5031 Q248.2734,137.5031 248.4984,137.7422 Q248.7375,137.9672 248.7375,138.2766 Q248.7375,138.5859 248.4281,138.9516 Q247.9781,139.4719 247.2609,139.7672 Q246.2906,140.175 245.1234,140.175 Q243.7594,140.175 242.6766,139.6125 Q241.7906,139.1625 241.1719,138.2063 Q240.5531,137.2359 240.5531,136.0828 L240.5531,135.0422 Q240.5531,133.8469 241.1016,132.8203 Q241.6641,131.7797 242.6484,131.2313 Q243.6328,130.6688 244.7438,130.6688 Q245.4047,130.6688 245.9813,130.8234 Q246.5719,130.9641 247.0641,131.2875 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="56.7"
+                  x="263.025" y="140.2172">Operation
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="198" x2="355.5" y1="149.4" y2="149.4"/>
+            <rect fill="none" height="5.4" style="stroke:#C82930;stroke-width:0.9;" width="5.4" x="204.3" y="160.0295"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="88.2"
+                  x="215.1" y="166.5967">operateur: char
+            </text>
+            <line style="stroke:#181818;stroke-width:0.45;" x1="198" x2="355.5" y1="173.359" y2="173.359"/>
+            <ellipse cx="207" cy="186.6885" fill="#84BE84" rx="2.7" ry="2.7" style="stroke:#038048;stroke-width:0.9;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="135.9"
+                  x="215.1" y="190.5557">calculerValeur(): double
+            </text>
+        </g><!--link AppExpression to Nombre-->
+        <g id="link_AppExpression_Nombre">
+            <path d="M140.85,66.708 C140.85,82.917 140.85,97.659 140.85,114.975 " fill="none"
+                  id="AppExpression-to-Nombre" style="stroke:#181818;stroke-width:0.9;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#181818" points="140.85,120.375,144.45,112.275,140.85,115.875,137.25,112.275,140.85,120.375"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+        </g><!--link AppExpression to Operation-->
+        <g id="link_AppExpression_Operation">
+            <path d="M221.85,66.708 C221.85,82.917 221.85,97.659 221.85,114.975 " fill="none"
+                  id="AppExpression-to-Operation" style="stroke:#181818;stroke-width:0.9;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#181818" points="221.85,120.375,225.45,112.275,221.85,115.875,218.25,112.275,221.85,120.375"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+        </g><!--link Nombre to Expression-->
+        <g id="link_Nombre_Expression">
+            <path d="M85.95,197.379 C85.95,233.415 85.95,281.7 85.95,281.7 C85.95,281.7 128.457,281.7 180.738,281.7 "
+                  fill="none" id="Nombre-to-Expression"
+                  style="stroke:#181818;stroke-width:0.9;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="196.938,281.7,180.738,276.3,180.738,287.1,196.938,281.7"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+        </g><!--link Operation to Expression-->
+        <g id="link_Operation_Expression">
+            <path d="M303.3,197.244 C303.3,214.488 303.3,218.358 303.3,234.549 " fill="none"
+                  id="Operation-to-Expression" style="stroke:#181818;stroke-width:0.9;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="303.3,250.749,308.7,234.549,297.9,234.549,303.3,250.749"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+        </g><!--link Operation to Expression-->
+        <g id="link_Operation_Expression">
+            <path d="M250.2,208.044 C250.2,225.288 250.2,229.158 250.2,245.349 " fill="none"
+                  id="Operation-Expression" style="stroke:#181818;stroke-width:0.9;"/>
+            <polygon fill="none" points="250.2,197.244,246.6,202.644,250.2,208.044,253.8,202.644,250.2,197.244"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+            <polygon fill="#181818" points="250.2,250.749,253.8,242.649,250.2,246.249,246.6,242.649,250.2,250.749"
+                     style="stroke:#181818;stroke-width:0.9;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="6.3"
+                  x="238.2384" y="240.8594">2
+            </text>
+        </g><!--SRC=[ZOyzRm8n38Pt_mgBYQeA0oC3KeUkxL2f2sBmvTmIaOiZnuT0qF_Uw4gFLgq4tYm_xuTDCffW8sRIOHkKlGL9KBOXPLBgC8R4TiYCehOH01-f57p8-N6VbKkfD1u1yHux2cdwOXhI-sfzjy2TX1O-82HZVIFF-4VXAVe-ihvIv5wdLTDAtqIkgg-O9-aQvO5sk1keaRd9u3cpadqdEfHX7spyXlIQ2Vp-iphCbdXkzVzj38Hpzt7Sx5Jl5mLSkjq8Y7DBdCmdFvXF]-->
+    </g>
+</svg>
