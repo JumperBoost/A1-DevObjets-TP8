@@ -1,12 +1,21 @@
 package fr.umontpellier.iut.expressions;
 
+import java.text.DecimalFormat;
+
 public class Nombre implements Expression {
+    private final double valeur;
+
     public Nombre(double valeur) {
-        throw new RuntimeException("Constructeur à implémenter");
+        this.valeur = valeur;
     }
 
     @Override
     public double calculerValeur() {
-        throw new RuntimeException("Méthode non-implémentée");
+        return valeur;
+    }
+
+    @Override
+    public String toString() {
+        return new DecimalFormat("###.##").format(valeur).replace(',', '.');
     }
 }

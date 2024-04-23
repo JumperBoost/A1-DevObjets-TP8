@@ -1,0 +1,29 @@
+@startuml
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AppExpression {
+  + main(String[]): void
+}
+interface Expression << interface >> {
+  + calculerValeur(): double
+}
+class Nombre {
+  - valeur: double
+  + calculerValeur(): double
+}
+class Operation {
+  - operateur: char
+  - expressionGauche: Expression
+  - expressionDroite: Expression
+  + calculerValeur(): double
+}
+
+AppExpression  -[#595959,dashed]->  Nombre
+AppExpression  -[#595959,dashed]->  Operation
+Nombre         -[#008200,dashed]-^  Expression
+Operation      -[#008200,dashed]-^  Expression
+Operation     "1" *-[#595959,plain]-> "expressionGauche\n1" Expression
+Operation     "1" *-[#595959,plain]-> "expressionDroite\n1" Expression
+@enduml
