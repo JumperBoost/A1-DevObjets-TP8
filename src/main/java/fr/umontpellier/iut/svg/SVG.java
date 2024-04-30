@@ -10,17 +10,17 @@ public class SVG extends Tag {
     /**
      * Largeur de l'image
      */
-    private double width;
+    private final double width;
 
     /**
      * Hauteur de l'image
      */
-    private double height;
+    private final double height;
 
     /**
      * Liste d'éléments contenus dans la balise SVG
      */
-    private List<Charts> content;
+    private final List<Charts> content;
 
     public SVG(double width, double height) {
         super("svg");

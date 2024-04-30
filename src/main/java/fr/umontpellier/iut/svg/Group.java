@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Group extends Charts {
-    private List<Charts> liste;
+    private final List<Charts> liste;
 
     public Group() {
         super("g");

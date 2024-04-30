@@ -6,7 +6,7 @@ import java.util.StringJoiner;
  * Modélisation d'une balise SVG
  */
 public abstract class Tag {
-    private String name;
+    private final String name;
     private Style style;
 
     public Tag(String name) {

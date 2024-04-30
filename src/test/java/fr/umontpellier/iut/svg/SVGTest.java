@@ -1,6 +1,5 @@
 package fr.umontpellier.iut.svg;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.w3c.dom.Node;
 
@@ -8,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SVGTest {
 
-    @Disabled
     @Test
     void image_SVG_vide() {
         Tag svg = new SVG(1024, 768);
