@@ -1,0 +1,70 @@
+@startuml
+
+left to right direction
+skinparam linetype ortho
+
+abstract class Charts
+
+class Circle {
+  - cx: double
+  - cy: double
+  - r: double
+  + getParameters(): String
+}
+
+class Group {
+  + add(Charts): void
+  + getContent(): String
+}
+
+class Rectangle {
+  - width: double
+  - y: double
+  - height: double
+  - x: double
+  + getParameters(): String
+}
+
+class SVG {
+  - width: double
+  - height: double
+  + saveAsFile(String): void
+  + getContent(): String
+  + add(Charts): void
+  + getParameters(): String
+}
+
+class Style {
+  - fill: String
+  - stroke: String
+  - strokeWidth: Double
+  - fillOpacity: Double
+  + setFill(String): Style
+  + getFillOpacity(): Double
+  + setFillOpacity(Double): Style
+  + toSVG(): String
+  + getFill(): String
+  + setStroke(String): Style
+  + getStroke(): String
+  + getStrokeWidth(): Double
+  + setStrokeWidth(Double): Style
+}
+
+abstract class Tag {
+  - name: String
+  + setStyle(Style): void
+  + getStyle(): Style
+  + getContent(): String
+  + toSVG(): String
+  + getParameters(): String
+}
+
+Charts     ---|> Tag
+Circle     --|>  Charts
+Group      --|>  Charts
+Group     o-> "liste\r0..*" Charts
+Rectangle  --|>  Charts
+SVG       o--> "content\r0..*" Charts
+SVG        --|>  Tag
+Tag       o--> "style\r0..1" Style
+@enduml

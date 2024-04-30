@@ -20,7 +20,7 @@ public class SVG extends Tag {
     /**
      * Liste d'éléments contenus dans la balise SVG
      */
-    private List<Tag> content;
+    private List<Charts> content;
 
     public SVG(double width, double height) {
         super("svg");
@@ -37,7 +37,7 @@ public class SVG extends Tag {
     @Override
     public String getContent() {
         StringBuilder builder = new StringBuilder();
-        for (Tag t: content) {
+        for (Charts t: content) {
             builder.append(t.toSVG());
         }
         return builder.toString();
@@ -46,10 +46,10 @@ public class SVG extends Tag {
 
     /**
      * Ajoute une balise à l'image
-     * @param tag balise à ajouter à l'image
+     * @param chart balise à ajouter à l'image
      */
-    public void add(Tag tag) {
-        content.add(tag);
+    public void add(Charts chart) {
+        content.add(chart);
     }
 
     /**

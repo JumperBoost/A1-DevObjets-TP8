@@ -1,12 +1,26 @@
 package fr.umontpellier.iut.svg;
 
-public class Group {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Group extends Charts {
+    private List<Charts> liste;
 
     public Group() {
-        throw new RuntimeException("Méthode non implémentée ! Effacez cette ligne et écrivez le code nécessaire");
+        super("g");
+        liste = new ArrayList<>();
     }
 
-    public void add(Tag t) {
-        throw new RuntimeException("Méthode non implémentée ! Effacez cette ligne et écrivez le code nécessaire");
+    public void add(Charts chart) {
+        if(!liste.contains(chart))
+            liste.add(chart);
+    }
+
+    @Override
+    public String getContent() {
+        StringBuilder content = new StringBuilder();
+        for(Charts chart : liste)
+            content.append(chart.toSVG());
+        return content.toString();
     }
 }

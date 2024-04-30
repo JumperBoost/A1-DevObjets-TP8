@@ -2,7 +2,7 @@ package fr.umontpellier.iut.svg;
 
 import java.util.Locale;
 
-public class Circle extends Tag {
+public class Circle extends Charts {
     private final double cx;
     private final double cy;
     private final double r;

@@ -21,7 +21,6 @@ public class AppSVG {
         style_circle.setFill("#00ffff");
         Circle cercle = new Circle(5, 10, 3);
         cercle.setStyle(style_circle);
-        svg.add(cercle);
 
         Style style_circle2 = new Style();
         style_circle2.setFill("#ff0000");
@@ -30,7 +29,11 @@ public class AppSVG {
         style_circle2.setStrokeWidth(0.1);
         Circle cercle2 = new Circle(7, 12, 3);
         cercle2.setStyle(style_circle2);
-        svg.add(cercle2);
+
+        Group circle_group = new Group();
+        circle_group.add(cercle);
+        circle_group.add(cercle2);
+        svg.add(circle_group);
 
         svg.saveAsFile("exercice2.svg");
     }

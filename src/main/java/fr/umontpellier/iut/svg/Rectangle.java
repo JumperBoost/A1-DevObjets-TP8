@@ -2,7 +2,7 @@ package fr.umontpellier.iut.svg;
 
 import java.util.Locale;
 
-public class Rectangle extends Tag {
+public class Rectangle extends Charts {
     private final double x;
     private final double y;
     private final double width;
