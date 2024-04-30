@@ -13,6 +13,6 @@ public class Rotate extends Transform {
 
     @Override
     public String toString() {
-        return "rotate(" + getStringFromDouble(a) + " " + getStringFromDouble(x) + " " + getStringFromDouble(y) + ")";
+        return "rotate(" + a + " " + x + " " + y + ")";
     }
 }
