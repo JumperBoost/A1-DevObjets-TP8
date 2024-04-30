@@ -13,6 +13,9 @@ public class Operation implements Expression {
 
     @Override
     public double calculerValeur() {
+        if(expressionGauche == null || expressionDroite == null)
+            throw new ArithmeticException("Opérateur invalide");
+
         return switch (operateur) {
             case '+' -> expressionGauche.calculerValeur() + expressionDroite.calculerValeur();
             case '-' -> expressionGauche.calculerValeur() - expressionDroite.calculerValeur();
