@@ -54,14 +54,11 @@ public abstract class Tag {
      * dans la balise s'il y en a. La chaîne vide "" sinon.
      */
     public String getContent() {
-        if(this instanceof Charts) {
-            StringBuilder builder = new StringBuilder();
-            for (Charts t : contents) {
-                builder.append(t.toSVG());
-            }
-            return builder.toString();
+        StringBuilder builder = new StringBuilder();
+        for (Charts t : contents) {
+            builder.append(t.toSVG());
         }
-        return "";
+        return builder.toString();
     }
 
     /**
