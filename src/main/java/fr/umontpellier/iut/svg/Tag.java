@@ -1,5 +1,7 @@
 package fr.umontpellier.iut.svg;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringJoiner;
 
 /**
@@ -8,9 +10,11 @@ import java.util.StringJoiner;
 public abstract class Tag {
     private final String name;
     private Style style;
+    private final List<Charts> contents;    // Liste d'éléments contenus dans la balise SVG
 
     public Tag(String name) {
         this.name = name;
+        this.contents = new ArrayList<>();
     }
 
     public Style getStyle() {
@@ -33,6 +37,15 @@ public abstract class Tag {
     }
 
     /**
+     * Ajoute une balise à l'image
+     * @param chart balise à ajouter à l'image
+     */
+    public void add(Charts chart) {
+        if(!contents.contains(chart))
+            contents.add(chart);
+    }
+
+    /**
      * Renvoie la représentation SVG des éléments contenus dans la balise. Si la balise contient d'autres balises, la
      * chaîne renvoyée doit correspondre à la concaténation des représentations au format SVG de toutes les balises
      * contenues. Si la balise n'en contient pas d'autre, la chaîne vide "" est renvoyée.
@@ -41,6 +54,13 @@ public abstract class Tag {
      * dans la balise s'il y en a. La chaîne vide "" sinon.
      */
     public String getContent() {
+        if(this instanceof Charts) {
+            StringBuilder builder = new StringBuilder();
+            for (Charts t : contents) {
+                builder.append(t.toSVG());
+            }
+            return builder.toString();
+        }
         return "";
     }
 

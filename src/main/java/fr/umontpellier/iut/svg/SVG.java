@@ -3,8 +3,6 @@ package fr.umontpellier.iut.svg;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-import java.util.LinkedList;
-import java.util.List;
 
 public class SVG extends Tag {
     /**
@@ -17,39 +15,15 @@ public class SVG extends Tag {
      */
     private final double height;
 
-    /**
-     * Liste d'éléments contenus dans la balise SVG
-     */
-    private final List<Charts> content;
-
     public SVG(double width, double height) {
         super("svg");
         this.width = width;
         this.height = height;
-        this.content = new LinkedList<>();
     }
 
     @Override
     public String getParameters() {
         return "xmlns=\"http://www.w3.org/2000/svg\" width=\"" + width + "\" height=\"" + height + "\"";
-    }
-
-    @Override
-    public String getContent() {
-        StringBuilder builder = new StringBuilder();
-        for (Charts t: content) {
-            builder.append(t.toSVG());
-        }
-        return builder.toString();
-
-    }
-
-    /**
-     * Ajoute une balise à l'image
-     * @param chart balise à ajouter à l'image
-     */
-    public void add(Charts chart) {
-        content.add(chart);
     }
 
     /**
